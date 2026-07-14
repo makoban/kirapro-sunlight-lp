@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUNLIGHT PRODUCE | サンライトプロデュース 煌TIMES事業部</title>
+  <meta name="description" content="サンライトプロデュースは、名古屋発アイドルユニット「煌TIMES」のキャラクター企画と、株式会社サンライトのものづくりをつなぐプロデュース事業部です。アクスタ専用マグネットベース「煌BASE」など、世界観と技術を横断するプロジェクトを紹介します。">
+  <meta name="keywords" content="サンライトプロデュース,サンプロ,煌TIMES,煌BASE,アクスタ台座,キャラクター企画,株式会社サンライト,名古屋,Makuake">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://kirapro.sunlight-net.co.jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SUNLIGHT PRODUCE">
+  <meta property="og:title" content="SUNLIGHT PRODUCE | サンライトプロデュース">
+  <meta property="og:description" content="キャラクターとものづくりを、ひとつの体験へ。煌TIMES、煌BASE、株式会社サンライトのプロジェクトを紹介します。">
+  <meta property="og:url" content="https://kirapro.sunlight-net.co.jp/">
+  <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SUNLIGHT PRODUCE | サンライトプロデュース">
+  <meta name="twitter:description" content="キャラクターとものづくりを、ひとつの体験へ。">
+  <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
+  <link rel="icon" type="image/webp" href="./パッケージ/タイトル透明.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f4f3ef;
+      --white: #ffffff;
+      --ink: #101010;
+      --muted: #666560;
+      --line: #cbc9c1;
+      --blue: #1239f4;
+      --red: #ef3d2f;
+      --yellow: #f6ca28;
+      --max: 1320px;
+      --pad: 48px;
+      --sans: "Noto Sans JP", sans-serif;
+      --display: "Manrope", "Noto Sans JP", sans-serif;
+      --mono: "IBM Plex Mono", monospace;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 76px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      border: 0;
+      background: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 3px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li {
+      line-break: strict;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-wrap: balance;
+    }
+
+    p,
+    li {
+      text-wrap: pretty;
+    }
+
+    .keep,
+    .phrase {
+      display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -80px;
+      left: 8px;
+      z-index: 200;
+      padding: 10px 14px;
+      background: var(--ink);
+      color: var(--white);
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 8px;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: 72px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 32px;
+      padding: 0 var(--pad);
+      background: rgba(244, 243, 239, 0.92);
+      border-bottom: 1px solid rgba(16, 16, 16, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .brand img {
+      width: 174px;
+      height: auto;
+    }
+
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav a {
+      position: relative;
+      padding: 8px 0;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .nav a::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 2px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.35s var(--ease);
+    }
+
+    .nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .header-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 42px;
+      padding: 0 18px;
+      background: var(--ink);
+      color: var(--white);
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .header-link:hover {
+      background: var(--yellow);
+      color: var(--ink);
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .menu-button span {
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 110;
+      display: none;
+      background: var(--blue);
+      color: var(--white);
+      padding: 96px 24px 32px;
+    }
+
+    .mobile-menu.is-open {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-menu a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      font-family: var(--display);
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--white);
+      border-radius: 4px;
+      font-size: 24px;
+    }
+
+    .section-inner {
+      width: min(calc(100% - (var(--pad) * 2)), var(--max));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: currentColor;
+    }
+
+    .hero {
+      position: relative;
+      height: calc(100svh - 106px);
+      min-height: 600px;
+      max-height: 900px;
+      margin-top: 72px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .hero-background {
+      position: absolute;
+      inset: -3%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.08);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+      width: min(calc(100% - (var(--pad) * 2)), var(--max));
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-bottom: 46px;
+    }
+
+    .hero .eyebrow {
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-logo-stage {
+      position: relative;
+      width: min(720px, 62vw);
+      max-width: 100%;
+      min-height: 150px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-logo-stage::before {
+      content: "";
+      position: absolute;
+      left: -3%;
+      right: 8%;
+      top: 52%;
+      height: 4px;
+      background: var(--yellow);
+      opacity: 0.64;
+      transform: skewX(-8deg);
+    }
+
+    .hero-logo-puck {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .hero-logo-puck img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+
+    .hero-logo-echo {
+      position: absolute;
+      z-index: 1;
+      width: 260px;
+      height: auto;
+      opacity: 0.1;
+      pointer-events: none;
+      animation: logoEcho 7s ease-in-out infinite;
+    }
+
+    .hero-logo-echo.echo-one {
+      right: -7%;
+      top: -28%;
+      transform: rotate(7deg);
+    }
+
+    .hero-logo-echo.echo-two {
+      right: 8%;
+      bottom: -24%;
+      transform: rotate(-5deg) scale(0.78);
+      animation-delay: -3.5s;
+    }
+
+    @keyframes logoEcho {
+      0%, 100% {
+        opacity: 0.07;
+      }
+      50% {
+        opacity: 0.16;
+      }
+    }
+
+    .hero-tagline {
+      max-width: 720px;
+      margin-top: 10px;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.55;
+    }
+
+    .hero-description {
+      max-width: 520px;
+      margin-top: 8px;
+      color: #41403d;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      min-height: 52px;
+      padding: 0 20px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      background: var(--white);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: transform 0.25s var(--ease), background 0.25s, color 0.25s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: var(--yellow);
+    }
+
+    .button.is-dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .button.is-dark:hover {
+      background: var(--blue);
+    }
+
+    .button.is-yellow {
+      background: var(--yellow);
+      color: var(--ink);
+      border-color: var(--yellow);
+    }
+
+    .button.is-yellow:hover {
+      background: var(--white);
+    }
+
+    .scroll-note {
+      position: absolute;
+      left: var(--pad);
+      bottom: 20px;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .scroll-note::after {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background: var(--ink);
+    }
+
+    .ticker {
+      display: flex;
+      overflow: hidden;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .ticker-track {
+      display: flex;
+      flex: none;
+      gap: 36px;
+      min-width: max-content;
+      padding: 15px 18px;
+      animation: ticker 26s linear infinite;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .ticker-track span {
+      display: inline-flex;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .ticker-track span::after {
+      content: "+";
+      color: var(--yellow);
+      font-size: 18px;
+    }
+
+    @keyframes ticker {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .intro {
+      padding: 130px 0 110px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.6fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .section-number {
+      font-family: var(--mono);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+    }
+
+    .intro h2 {
+      max-width: 930px;
+      font-family: var(--display);
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .intro h2 .blue {
+      color: var(--blue);
+    }
+
+    .intro h2 .red {
+      color: var(--red);
+    }
+
+    .intro-copy {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid var(--ink);
+    }
+
+    .intro-copy p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .sunpro-brand-board {
+      display: grid;
+      grid-template-columns: 1.65fr 1fr;
+      margin-top: 58px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      background: var(--white);
+    }
+
+    .brand-lockup {
+      position: relative;
+      min-height: 238px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 34px 34px;
+      overflow: hidden;
+    }
+
+    .brand-lockup + .brand-lockup {
+      border-left: 1px solid var(--ink);
+    }
+
+    .brand-lockup small {
+      position: absolute;
+      top: 20px;
+      left: 22px;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .brand-lockup img {
+      width: min(680px, 92%);
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+
+    .brand-lockup.is-short img {
+      width: min(360px, 76%);
+    }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 90px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .capability {
+      min-height: 280px;
+      padding: 28px 28px 34px 0;
+      border-right: 1px solid var(--ink);
+    }
+
+    .capability + .capability {
+      padding-left: 28px;
+    }
+
+    .capability:last-child {
+      border-right: 0;
+    }
+
+    .capability strong {
+      display: block;
+      margin-bottom: 48px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--red);
+    }
+
+    .capability h3 {
+      font-family: var(--display);
+      font-size: 29px;
+      line-height: 1.3;
+    }
+
+    .capability p {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .case {
+      padding: 110px 0;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .case-head {
+      display: grid;
+      grid-template-columns: 110px 1fr 390px;
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 46px;
+    }
+
+    .case-id {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .case-head h2 {
+      font-family: var(--display);
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .case-head p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .case-official-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 16px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid currentColor;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: color 0.25s, gap 0.25s var(--ease);
+    }
+
+    .case-official-link:hover {
+      gap: 32px;
+      color: var(--blue);
+    }
+
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .case-tags span {
+      padding: 6px 9px;
+      border: 1px solid currentColor;
+      border-radius: 3px;
+    }
+
+    .ensemble {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: var(--ink);
+    }
+
+    .ensemble-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ensemble-logo {
+      position: absolute;
+      top: 5%;
+      left: 4%;
+      z-index: 3;
+      width: 190px;
+      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.25));
+    }
+
+    .ensemble-member {
+      position: absolute;
+      z-index: 2;
+      width: 13.5%;
+      bottom: 8%;
+    }
+
+    .ensemble-member img {
+      width: 100%;
+      filter: drop-shadow(0 13px 10px rgba(0, 0, 0, 0.28));
+      pointer-events: none;
+    }
+
+    .ensemble-member:nth-of-type(1) {
+      left: 10%;
+    }
+
+    .ensemble-member:nth-of-type(2) {
+      left: 24.5%;
+      bottom: 10%;
+    }
+
+    .ensemble-member:nth-of-type(3) {
+      left: 39%;
+    }
+
+    .ensemble-member:nth-of-type(4) {
+      left: 53.5%;
+      bottom: 10%;
+    }
+
+    .ensemble-member:nth-of-type(5) {
+      left: 68%;
+    }
+
+    .ensemble-member:nth-of-type(6) {
+      left: 82%;
+      bottom: 10%;
+    }
+
+    .ensemble-caption {
+      position: absolute;
+      right: 18px;
+      bottom: 15px;
+      z-index: 3;
+      padding: 7px 10px;
+      background: var(--white);
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 10px;
+    }
+
+    .cast-static-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--ink);
+      border-left: 1px solid var(--ink);
+      border-top: 0;
+      background: var(--white);
+    }
+
+    .cast-static-card {
+      min-width: 0;
+      display: grid;
+      grid-template-columns: minmax(112px, 0.72fr) minmax(0, 1.28fr);
+      min-height: 290px;
+      border-right: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      background: var(--white);
+    }
+
+    .cast-static-portrait {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+      background: var(--yellow);
+      text-align: left;
+    }
+
+    .cast-static-card:nth-child(2) .cast-static-portrait,
+    .cast-static-card:nth-child(6) .cast-static-portrait {
+      background: #dbe7ff;
+    }
+
+    .cast-static-card:nth-child(4) .cast-static-portrait {
+      background: #ffdcd7;
+    }
+
+    .cast-static-card:nth-child(5) .cast-static-portrait {
+      background: #f7d9ea;
+    }
+
+    .cast-static-card:nth-child(6) .cast-static-portrait {
+      background: #dcefe3;
+    }
+
+    .cast-static-portrait::before {
+      content: attr(data-number);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      font-family: var(--display);
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1;
+      color: rgba(16, 16, 16, 0.18);
+    }
+
+    .cast-static-portrait::after {
+      content: "+";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 3;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border: 1px solid rgba(16, 16, 16, 0.34);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 16px;
+      line-height: 1;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .cast-static-portrait:hover::after {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .cast-static-portrait img {
+      position: relative;
+      z-index: 1;
+      width: 88%;
+      max-height: 275px;
+      object-fit: contain;
+      object-position: bottom;
+    }
+
+    .cast-static-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+      padding: 24px 20px;
+    }
+
+    .cast-static-copy h3 {
+      font-size: 21px;
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .cast-static-latin {
+      margin-top: 4px;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--blue);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .cast-static-catch {
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .cast-static-meta {
+      display: grid;
+      gap: 7px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 10px;
+    }
+
+    .cast-static-meta span {
+      display: inline-block;
+      width: 42px;
+      font-family: var(--mono);
+      color: var(--muted);
+    }
+
+    .cast-static-link {
+      align-self: flex-start;
+      margin-top: 16px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 9px;
+      font-weight: 600;
+    }
+
+    .base-case {
+      padding-bottom: 0;
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .base-case .case-head p,
+    .base-case .case-id {
+      color: #afada7;
+    }
+
+    .base-product-hero {
+      position: relative;
+      min-height: 650px;
+      overflow: hidden;
+    }
+
+    .base-product-hero > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .base-product-copy {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 650px;
+      width: min(calc(100% - (var(--pad) * 2)), var(--max));
+      margin: 0 auto;
+    }
+
+    .base-product-copy h3 {
+      font-family: var(--display);
+      font-size: 72px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .base-product-copy .jp {
+      display: block;
+      margin-top: 10px;
+      color: var(--yellow);
+      font-family: var(--sans);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .base-product-copy p {
+      max-width: 480px;
+      margin-top: 22px;
+      color: #e8e7e2;
+      font-size: 14px;
+    }
+
+    .product-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: min(580px, 100%);
+      margin-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .product-points li {
+      list-style: none;
+      padding: 16px 12px 16px 0;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .product-points li + li {
+      padding-left: 12px;
+    }
+
+    .product-points li:last-child {
+      border-right: 0;
+    }
+
+    .base-lab {
+      padding: 100px 0 120px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .base-lab-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .base-lab-copy {
+      position: static;
+    }
+
+    .base-lab-copy h3 {
+      font-family: var(--display);
+      font-size: 36px;
+      line-height: 1.2;
+    }
+
+    .base-lab-copy > p {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .assembly-process {
+      list-style: none;
+      margin-top: 28px;
+      border-top: 1px solid var(--ink);
+    }
+
+    .assembly-process li {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .assembly-process .number {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--blue);
+    }
+
+    .assembly-process strong {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .assembly-process p {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .assembly-visual {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      min-width: 0;
+      border: 1px solid var(--line);
+      background: #f7f7f5;
+      isolation: isolate;
+    }
+
+    .assembly-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35), inset 0 -60px 72px rgba(16, 16, 16, 0.08);
+      pointer-events: none;
+    }
+
+    .assembly-scene {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .assembly-video {
+      background: #101114;
+    }
+
+    .assembly-status {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      z-index: 10;
+      padding: 7px 11px;
+      border: 1px solid rgba(16, 16, 16, 0.18);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .mechanism-strip {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 48px;
+      align-items: center;
+      margin-top: 48px;
+      padding: 34px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .mechanism-diagram-trigger {
+      position: relative;
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #f6f5f1;
+    }
+
+    .mechanism-diagram-trigger .mechanism-diagram {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      object-fit: contain;
+      background: #f6f5f1;
+    }
+
+    .media-zoom-label {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 34px;
+      padding: 0 11px;
+      border: 1px solid rgba(16, 16, 16, 0.32);
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .mechanism-diagram-trigger:hover .media-zoom-label {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .media-dialog {
+      width: min(960px, calc(100% - 32px));
+      max-width: none;
+      max-height: calc(100dvh - 32px);
+      margin: auto;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid var(--ink);
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .media-dialog::backdrop {
+      background: rgba(16, 16, 16, 0.76);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .media-dialog-shell {
+      position: relative;
+      min-width: 0;
+    }
+
+    .media-dialog-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 5;
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid var(--ink);
+      background: var(--white);
+      font-family: var(--mono);
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .media-dialog-body {
+      max-height: calc(100dvh - 34px);
+      overflow: auto;
+      padding: 66px 28px 28px;
+    }
+
+    .media-dialog-image {
+      width: 100%;
+      max-height: calc(100dvh - 150px);
+      object-fit: contain;
+      background: var(--white);
+    }
+
+    .media-dialog-caption {
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .media-dialog-member {
+      display: grid;
+      grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
+      min-height: 560px;
+      border: 1px solid var(--ink);
+      background: var(--white);
+    }
+
+    .media-dialog-member-portrait {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .media-dialog-member-portrait::before {
+      content: attr(data-number);
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      font-family: var(--display);
+      font-size: 54px;
+      font-weight: 800;
+      line-height: 1;
+      color: rgba(16, 16, 16, 0.18);
+    }
+
+    .media-dialog-member-portrait img {
+      position: relative;
+      z-index: 1;
+      width: 92%;
+      height: 92%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+
+    .media-dialog-member .cast-static-copy {
+      padding: 50px 42px;
+    }
+
+    .media-dialog-member .cast-static-copy h3 {
+      font-size: 30px;
+    }
+
+    .media-dialog-member .cast-static-catch {
+      font-size: 17px;
+    }
+
+    .media-dialog-member .cast-static-meta {
+      font-size: 12px;
+    }
+
+    .media-dialog-member .cast-static-link {
+      font-size: 11px;
+    }
+
+    .mechanism-copy h4 {
+      font-family: var(--display);
+      font-size: 27px;
+      line-height: 1.35;
+    }
+
+    .mechanism-copy > p {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .slot-schema {
+      display: grid;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .slot-schema-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 9px;
+      align-items: center;
+    }
+
+    .slot-schema-row i {
+      height: 22px;
+      border: 1px solid rgba(18, 57, 244, 0.32);
+      border-radius: 7px 7px 2px 2px;
+      background: repeating-linear-gradient(90deg, rgba(18, 57, 244, 0.16) 0 2px, rgba(18, 57, 244, 0.04) 2px 5px);
+    }
+
+    .slot-schema-row b {
+      color: var(--blue);
+      font-family: var(--mono);
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .base-proof {
+      grid-column: 1 / -1;
+      margin-top: 28px;
+      padding-top: 40px;
+      border-top: 1px solid var(--ink);
+    }
+
+    .base-proof-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.55fr);
+      gap: 48px;
+      align-items: end;
+    }
+
+    .base-proof-head h4 {
+      font-family: var(--display);
+      font-size: 30px;
+      line-height: 1.25;
+    }
+
+    .base-proof-head > p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .base-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .base-proof-item {
+      min-width: 0;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .base-proof-video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #101114;
+    }
+
+    .base-proof-item figcaption {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      padding: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .base-proof-item figcaption > span {
+      color: var(--blue);
+      font-family: var(--mono);
+      font-size: 9px;
+    }
+
+    .base-proof-item strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .base-proof-item p {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .company-case {
+      background: var(--white);
+    }
+
+    .company-visual {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: var(--white);
+    }
+
+    .company-visual > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .company-copy {
+      position: absolute;
+      top: 10%;
+      right: 4%;
+      width: 35%;
+    }
+
+    .company-copy .eyebrow {
+      color: var(--red);
+    }
+
+    .company-copy h3 {
+      font-family: var(--display);
+      font-size: 45px;
+      line-height: 1.16;
+    }
+
+    .company-copy p {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .company-copy .button {
+      margin-top: 24px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .process-step {
+      min-height: 180px;
+      padding: 24px;
+      border-right: 1px solid rgba(255, 255, 255, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .process-step:nth-child(3n) {
+      border-right: 0;
+    }
+
+    .process-step:nth-last-child(-n+3) {
+      border-bottom: 0;
+    }
+
+    .process-step span {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--yellow);
+    }
+
+    .process-step h4 {
+      margin-top: 38px;
+      font-size: 16px;
+    }
+
+    .process-step p {
+      margin-top: 8px;
+      color: #bdbab3;
+      font-size: 11px;
+    }
+
+    .final {
+      padding: 100px 0 44px;
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .final h2 {
+      max-width: 1120px;
+      font-family: var(--display);
+      font-size: 78px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .final-lead {
+      max-width: 620px;
+      margin-top: 28px;
+      font-size: 15px;
+    }
+
+    .final-links {
+      margin-top: 70px;
+      border-top: 1px solid var(--white);
+    }
+
+    .final-link {
+      display: grid;
+      grid-template-columns: 70px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      min-height: 94px;
+      border-bottom: 1px solid var(--white);
+      transition: background 0.25s, color 0.25s, padding 0.3s var(--ease);
+    }
+
+    .final-link:hover {
+      padding: 0 18px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .final-link span:first-child {
+      font-family: var(--mono);
+      font-size: 10px;
+    }
+
+    .final-link strong {
+      font-size: 22px;
+      white-space: nowrap;
+    }
+
+    .final-link span:last-child {
+      font-size: 24px;
+    }
+
+    footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: 34px var(--pad);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: #aaa7a0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 1120px) {
+      :root {
+        --pad: 32px;
+      }
+
+      .nav {
+        gap: 18px;
+      }
+
+      .hero h1 {
+        font-size: 11px;
+      }
+
+      .hero-logo-stage {
+        width: min(680px, 66vw);
+      }
+
+      .intro-grid {
+        grid-template-columns: 180px 1fr;
+        gap: 40px;
+      }
+
+      .intro h2 {
+        font-size: 52px;
+      }
+
+      .case-head {
+        grid-template-columns: 80px 1fr;
+      }
+
+      .case-head > div:last-child {
+        grid-column: 2;
+      }
+
+      .cast-static-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .company-copy {
+        width: 39%;
+      }
+
+      .company-copy h3 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .site-header {
+        grid-template-columns: 1fr auto;
+      }
+
+      .nav,
+      .header-link {
+        display: none;
+      }
+
+      .menu-button {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: 11px;
+      }
+
+      .hero-tagline {
+        font-size: 20px;
+      }
+
+      .hero-logo-stage {
+        width: min(650px, 74vw);
+      }
+
+      .intro {
+        padding: 100px 0 80px;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .intro h2 {
+        font-size: 46px;
+      }
+
+      .capabilities {
+        grid-template-columns: 1fr;
+      }
+
+      .capability,
+      .capability + .capability {
+        min-height: 0;
+        padding: 28px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .capability:last-child {
+        border-bottom: 0;
+      }
+
+      .capability strong {
+        margin-bottom: 22px;
+      }
+
+      .sunpro-brand-board {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-lockup + .brand-lockup {
+        border-top: 1px solid var(--ink);
+        border-left: 0;
+      }
+
+      .case {
+        padding: 86px 0;
+      }
+
+      .case-head h2 {
+        font-size: 46px;
+      }
+
+      .base-product-hero,
+      .base-product-copy {
+        min-height: 580px;
+      }
+
+      .base-product-copy h3 {
+        font-size: 58px;
+      }
+
+      .base-lab-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .base-lab-copy {
+        position: static;
+      }
+
+      .base-proof-head {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .mechanism-strip {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .company-visual {
+        aspect-ratio: auto;
+        overflow: visible;
+      }
+
+      .company-visual > img {
+        aspect-ratio: 16 / 9;
+      }
+
+      .company-copy {
+        position: static;
+        width: 100%;
+        padding: 42px 0 0;
+      }
+
+      .process {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-step {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .process-step:nth-child(3n) {
+        border-right: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .process-step:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .process-step:nth-last-child(-n+3) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .process-step:last-child {
+        grid-column: 1 / -1;
+        border-bottom: 0;
+      }
+
+      .final h2 {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --pad: 20px;
+      }
+
+      body {
+        font-size: 15px;
+      }
+
+      .site-header {
+        height: 64px;
+        gap: 14px;
+        padding: 0 var(--pad);
+      }
+
+      .brand img {
+        width: 148px;
+      }
+
+      .hero {
+        height: calc(100svh - 88px);
+        min-height: 480px;
+        max-height: 760px;
+        margin-top: 64px;
+      }
+
+      .hero-background {
+        object-position: 60% center;
+      }
+
+      .hero-copy {
+        width: calc(100% - 40px);
+        justify-content: flex-start;
+        padding-top: 48px;
+        padding-bottom: 98px;
+      }
+
+      .hero .eyebrow {
+        margin-bottom: 14px;
+      }
+
+      .hero h1 {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+
+      .hero-logo-stage {
+        width: 100%;
+        min-height: 100px;
+        margin-top: 6px;
+      }
+
+      .hero-logo-puck {
+        min-height: 84px;
+      }
+
+      .hero-logo-echo {
+        width: 150px;
+      }
+
+      .hero-logo-echo.echo-one {
+        right: -4%;
+        top: -16%;
+      }
+
+      .hero-logo-echo.echo-two {
+        right: 6%;
+        bottom: -12%;
+      }
+
+      .hero-tagline {
+        max-width: 350px;
+        margin-top: 8px;
+        font-size: 17px;
+      }
+
+      .hero-description {
+        max-width: 340px;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 1.75;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .hero-actions .button {
+        min-width: 0;
+        gap: 10px;
+        padding: 0 13px;
+        font-size: 12px;
+      }
+
+      .hero-button-company-prefix {
+        display: none;
+      }
+
+      .scroll-note {
+        display: none;
+      }
+
+      .intro {
+        padding: 76px 0 66px;
+      }
+
+      .intro h2 {
+        font-size: 35px;
+      }
+
+      .intro-copy {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 32px;
+      }
+
+      .capabilities {
+        margin-top: 52px;
+      }
+
+      .sunpro-brand-board {
+        margin-top: 40px;
+      }
+
+      .brand-lockup {
+        min-height: 170px;
+        padding: 44px 18px 24px;
+      }
+
+      .case {
+        padding: 70px 0;
+      }
+
+      .case-head {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 30px;
+      }
+
+      .case-head > div:last-child {
+        grid-column: 1;
+      }
+
+      .case-head h2 {
+        font-size: 36px;
+      }
+
+      .ensemble-logo {
+        width: 82px;
+      }
+
+      .ensemble-member {
+        width: 15%;
+      }
+
+      .ensemble-member:nth-of-type(1) {
+        left: 7%;
+      }
+
+      .ensemble-member:nth-of-type(2) {
+        left: 23%;
+      }
+
+      .ensemble-member:nth-of-type(3) {
+        left: 39%;
+      }
+
+      .ensemble-member:nth-of-type(4) {
+        left: 55%;
+      }
+
+      .ensemble-member:nth-of-type(5) {
+        left: 71%;
+      }
+
+      .ensemble-member:nth-of-type(6) {
+        left: 84%;
+      }
+
+      .ensemble-caption {
+        display: none;
+      }
+
+      .cast-static-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        border: 0;
+        background: transparent;
+      }
+
+      .cast-static-card {
+        display: block;
+        min-height: 0;
+        border: 1px solid var(--ink);
+      }
+
+      .cast-static-portrait {
+        aspect-ratio: 4 / 5;
+      }
+
+      .cast-static-portrait img {
+        width: 96%;
+        height: 100%;
+        max-height: none;
+      }
+
+      .cast-static-copy {
+        justify-content: flex-start;
+        min-height: 72px;
+        padding: 11px 10px 12px;
+      }
+
+      .cast-static-copy h3 {
+        font-size: 14px;
+      }
+
+      .cast-static-latin {
+        font-size: 7px;
+      }
+
+      .cast-static-catch,
+      .cast-static-meta,
+      .cast-static-link {
+        display: none;
+      }
+
+      .base-product-hero,
+      .base-product-copy {
+        min-height: 620px;
+      }
+
+      .base-product-hero > img {
+        object-position: 62% center;
+        opacity: 0.62;
+      }
+
+      .base-product-copy {
+        justify-content: flex-start;
+        padding-top: 64px;
+      }
+
+      .base-product-copy h3 {
+        font-size: 46px;
+      }
+
+      .base-product-copy .jp {
+        font-size: 18px;
+      }
+
+      .product-points {
+        grid-template-columns: 1fr;
+      }
+
+      .product-points li,
+      .product-points li + li {
+        padding: 10px 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .product-points li:last-child {
+        border-bottom: 0;
+      }
+
+      .base-lab {
+        padding: 70px 0 80px;
+      }
+
+      .base-lab-grid {
+        gap: 28px;
+      }
+
+      .base-lab-copy h3 {
+        font-size: 30px;
+      }
+
+      .assembly-visual {
+        aspect-ratio: 16 / 9;
+      }
+
+      .assembly-scene {
+        object-position: center;
+      }
+
+      .assembly-status {
+        display: none;
+      }
+
+      .mechanism-strip {
+        gap: 24px;
+        margin-top: 32px;
+        padding: 24px 0;
+      }
+
+      .mechanism-diagram-trigger .mechanism-diagram {
+        padding: 12px;
+      }
+
+      .mechanism-copy h4 {
+        font-size: 22px;
+      }
+
+      .base-proof {
+        margin-top: 12px;
+        padding-top: 28px;
+      }
+
+      .base-proof-head h4 {
+        font-size: 24px;
+      }
+
+      .base-proof-grid {
+        gap: 8px;
+        margin-top: 20px;
+      }
+
+      .base-proof-item figcaption {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 10px;
+      }
+
+      .base-proof-item p {
+        display: none;
+      }
+
+      .media-dialog {
+        width: calc(100% - 20px);
+        max-height: calc(100dvh - 20px);
+      }
+
+      .media-dialog-body {
+        max-height: calc(100dvh - 22px);
+        padding: 58px 12px 12px;
+      }
+
+      .media-dialog-close {
+        top: 8px;
+        right: 8px;
+        width: 38px;
+        height: 38px;
+      }
+
+      .media-dialog-image {
+        width: min(760px, 200vw);
+        max-width: none;
+        max-height: none;
+        touch-action: pan-x pan-y;
+      }
+
+      .media-dialog-member {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+
+      .media-dialog-member-portrait {
+        aspect-ratio: 4 / 5;
+        max-height: 58dvh;
+      }
+
+      .media-dialog-member .cast-static-copy {
+        display: flex;
+        min-height: 0;
+        padding: 24px 20px 28px;
+      }
+
+      .media-dialog-member .cast-static-copy h3 {
+        font-size: 24px;
+      }
+
+      .media-dialog-member .cast-static-latin,
+      .media-dialog-member .cast-static-catch,
+      .media-dialog-member .cast-static-meta,
+      .media-dialog-member .cast-static-link {
+        display: block;
+      }
+
+      .media-dialog-member .cast-static-latin {
+        font-size: 9px;
+      }
+
+      .media-dialog-member .cast-static-link {
+        align-self: flex-start;
+      }
+
+      .company-visual > img {
+        aspect-ratio: 4 / 3;
+        object-position: 42% center;
+      }
+
+      .company-copy h3 {
+        font-size: 32px;
+      }
+
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step,
+      .process-step:nth-child(2n),
+      .process-step:nth-child(3n) {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .process-step:last-child {
+        grid-column: auto;
+      }
+
+      .process-step h4 {
+        margin-top: 18px;
+      }
+
+      .final {
+        padding-top: 74px;
+      }
+
+      .final h2 {
+        font-size: 38px;
+      }
+
+      .final-links {
+        margin-top: 48px;
+      }
+
+      .final-link {
+        grid-template-columns: 36px 1fr auto;
+        min-height: 82px;
+      }
+
+      .final-link strong {
+        font-size: 16px;
+      }
+
+      .final-link-wide {
+        display: none;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 640px) and (max-height: 620px) {
+      .hero-copy {
+        padding-top: 34px;
+      }
+
+      .hero .eyebrow {
+        margin-bottom: 8px;
+      }
+
+      .hero h1 {
+        font-size: 10px;
+      }
+
+      .hero-logo-stage {
+        min-height: 78px;
+      }
+
+      .hero-logo-puck {
+        min-height: 68px;
+      }
+
+      .hero-tagline {
+        margin-top: 13px;
+        font-size: 16px;
+      }
+
+      .hero-description {
+        font-size: 11px;
+        line-height: 1.6;
+      }
+
+      .hero-actions {
+        margin-top: 12px;
+      }
+
+      .hero-actions .button {
+        min-height: 44px;
+      }
+
+      .hero-logo-echo {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="サンライトプロデュース トップへ">
+      <img src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="サンプロ" width="446" height="112">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <a href="#about">Sunpro</a>
+      <a href="#kirameki">煌TIMES</a>
+      <a href="#base">煌BASE</a>
+      <a href="#company">Sunlight</a>
+    </nav>
+    <a class="header-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">
+      煌BASEを見る <span aria-hidden="true">↗</span>
+    </a>
+    <button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
+    <button class="mobile-close" id="mobileClose" type="button" aria-label="メニューを閉じる">×</button>
+    <a href="#about">Sunpro <span>01</span></a>
+    <a href="#kirameki">煌TIMES <span>02</span></a>
+    <a href="#base">煌BASE <span>03</span></a>
+    <a href="#company">Sunlight <span>04</span></a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <img class="hero-background" src="./assets/sunpro/hero-kinetic.jpg" alt="光、レール、透明素材が動き出すサンライトプロデュースの抽象的なクリエイティブ装置" width="1672" height="941" fetchpriority="high">
+      <div class="hero-copy">
+        <p class="eyebrow">Kirameki Times Division / Nagoya</p>
+        <h1 id="heroTitle">サンライトプロデュース</h1>
+        <div class="hero-logo-stage" id="heroLogoStage">
+          <div class="hero-logo-puck">
+            <img src="./assets/sunpro/sunpro-logo-b-full-alpha.png" alt="SUNLIGHT PRODUCE サンライトプロデュース" width="830" height="112">
+          </div>
+          <img class="hero-logo-echo echo-one" src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="" width="446" height="112" aria-hidden="true">
+          <img class="hero-logo-echo echo-two" src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="" width="446" height="112" aria-hidden="true">
+        </div>
+        <p class="hero-tagline"><span class="phrase">好きと技術をつないで、</span><span class="phrase">まだない楽しさを</span><span class="phrase">プロデュース。</span></p>
+        <p class="hero-description"><span class="phrase">キャラクター、音楽、</span><span class="phrase">デジタル体験、プロダクト。</span><span class="phrase"><span class="keep">煌TIMES</span>と<span class="keep">株式会社サンライト</span>の</span><span class="phrase">ものづくりを横断し、</span><span class="phrase">企画を触れられる体験へ育てます。</span></p>
+        <div class="hero-actions">
+          <a class="button is-dark" href="#about">サンプロを知る <span aria-hidden="true">↓</span></a>
+          <a class="button is-yellow" href="#kirameki">煌TIMESを知る <span aria-hidden="true">↓</span></a>
+          <a class="button" href="#base">煌BASEを見る <span aria-hidden="true">↓</span></a>
+          <a class="button" href="#company" aria-label="株式会社サンライトを知る"><span><span class="hero-button-company-prefix">株式会社</span>サンライトを知る</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <p class="scroll-note">Scroll to 01</p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Character IP</span><span>Product Planning</span><span>Creative Direction</span><span>Plastic Engineering</span><span>Experience Design</span>
+        <span>Character IP</span><span>Product Planning</span><span>Creative Direction</span><span>Plastic Engineering</span><span>Experience Design</span>
+      </div>
+    </div>
+
+    <section class="intro" id="about">
+      <div class="section-inner">
+        <div class="intro-grid">
+          <div class="section-number reveal">01 / SUNLIGHT PRODUCE</div>
+          <div>
+            <h2 class="reveal">好きの熱量を、<span class="blue">企画</span>に。<br>技術の蓄積を、<span class="red">体験</span>に。</h2>
+            <div class="intro-copy reveal">
+              <p><span class="keep">サンライトプロデュース</span>、通称「サンプロ」は、<span class="keep">煌TIMES</span>の世界観と、<span class="keep">株式会社サンライト</span>が培ってきた設計・開発・製造の技術をつなぐプロデュース事業部です。</p>
+              <p>キャラクターをつくるだけで終わらず、音楽、映像、会話、イベント、プロダクトへ。企画から実際に触れられる体験までを一つの流れとして育てます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sunpro-brand-board reveal" aria-label="サンプロ ロゴシステム">
+          <div class="brand-lockup">
+            <small>Primary Logo / Light &amp; Spark</small>
+            <img src="./assets/sunpro/sunpro-logo-b-full-alpha.png" alt="SUNLIGHT PRODUCE サンライトプロデュース ロゴ" width="830" height="112" loading="lazy">
+          </div>
+          <div class="brand-lockup is-short">
+            <small>Short Logo / SUNPRO</small>
+            <img src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="SUNPRO サンプロ ロゴ" width="446" height="112" loading="lazy">
+          </div>
+        </div>
+
+        <div class="capabilities">
+          <article class="capability reveal">
+            <strong>01 / CHARACTER</strong>
+            <h3>世界観をつくり、長く育てる。</h3>
+            <p>キャラクター設計、物語、音楽、映像、LINEでの会話まで。接点を横断しながら、一人ひとりの個性を届けます。</p>
+          </article>
+          <article class="capability reveal">
+            <strong>02 / PRODUCT</strong>
+            <h3>ファンの声を、使える形にする。</h3>
+            <p>飾る、持ち出す、入れ替える。推し活の日常にある小さな不便から、実用性と見た目を両立する製品を考えます。</p>
+          </article>
+          <article class="capability reveal">
+            <strong>03 / ENGINEERING</strong>
+            <h3>企画を、量産できる品質まで。</h3>
+            <p>デザイン、機械設計、試作、金型、検証、製造。サンライトの知見で、アイデアを実際に手に取れる製品へ進めます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case" id="kirameki" aria-labelledby="kiramekiTitle">
+      <div class="section-inner">
+        <div class="case-head reveal">
+          <div class="case-id">02 / KIRAMEKI TIMES</div>
+          <div>
+            <h2 id="kiramekiTitle">煌TIMES</h2>
+            <div class="case-tags"><span>Character IP</span><span>Music</span><span>LINE Bot</span></div>
+          </div>
+          <div>
+            <p>名古屋を舞台にした6人組アイドルユニット。ステージの姿と日常の素顔、その両方を行き来しながら、ファンと一緒に物語を育てます。</p>
+            <a class="case-official-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener">煌TIMES 公式サイトへ <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="ensemble reveal" id="ensemble">
+          <img class="ensemble-background" src="./assets/sunpro/case-kirameki-stage.jpg" alt="煌TIMESの6人を紹介する制作スタジオのステージ" width="1672" height="941" loading="lazy">
+          <img class="ensemble-logo" src="./パッケージ/タイトル透明.webp" alt="煌TIMES 公式ロゴ" width="1100" height="934" loading="lazy">
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/乙姫マリン.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></div>
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/大須かのん（神音）.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></div>
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/金鯱きらら.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></div>
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/徳川あおい（葵）.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></div>
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/東山さくら（桜）.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></div>
+          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/神宮寺みこと（美琴）.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></div>
+          <figcaption class="ensemble-caption">6 MEMBERS / NAGOYA</figcaption>
+        </figure>
+
+        <div class="cast-static-grid reveal" aria-label="煌TIMESメンバー一覧">
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="01" data-media-kind="member" aria-label="乙姫マリンのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/marin_casual.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>乙姫 マリン</h3><p class="cast-static-latin">Otohime Marin</p><p class="cast-static-catch">「流れに任せてみよっか。」</p><div class="cast-static-meta"><div><span>AGE</span>23歳</div><div><span>SPOT</span>名古屋港水族館</div><div><span>FOOD</span>味噌煮込みうどん</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@561mucxu">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="02" data-media-kind="member" aria-label="大須かのんのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kanon_casual.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>大須 かのん</h3><p class="cast-static-latin">Osu Kanon</p><p class="cast-static-catch">「それ、尊い…！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>大須観音</div><div><span>FOOD</span>味噌カツ・台湾ラーメン</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@120ytjyl">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="03" data-media-kind="member" aria-label="金鯱きららのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kirara_casual.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>金鯱 きらら</h3><p class="cast-static-latin">Kinshachi Kirara</p><p class="cast-static-catch">「シャチっと決めよ！」</p><div class="cast-static-meta"><div><span>AGE</span>20歳</div><div><span>SPOT</span>名古屋城</div><div><span>FOOD</span>天むす・エビフライ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@545fnsmf">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="04" data-media-kind="member" aria-label="徳川あおいのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/aoi_casual.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>徳川 あおい</h3><p class="cast-static-latin">Tokugawa Aoi</p><p class="cast-static-catch">「いいじゃん。やってみよ！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>徳川園</div><div><span>FOOD</span>小倉トースト</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@198jdufv">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="05" data-media-kind="member" aria-label="東山さくらのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/sakura_casual.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>東山 さくら</h3><p class="cast-static-latin">Higashiyama Sakura</p><p class="cast-static-catch"><span class="phrase">「あんかけスパ、</span><span class="phrase">全力で食べるのです♪」</span></p><div class="cast-static-meta"><div><span>AGE</span>19歳</div><div><span>SPOT</span>東山動植物園</div><div><span>FOOD</span>あんかけスパゲッティ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@967bjcvh">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="06" data-media-kind="member" aria-label="神宮寺みことのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/mikoto_casual.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>神宮寺 みこと</h3><p class="cast-static-latin">Jinguji Mikoto</p><p class="cast-static-catch">「それ、ご利益ありそう。」</p><div class="cast-static-meta"><div><span>AGE</span>22歳</div><div><span>SPOT</span>熱田神宮</div><div><span>FOOD</span>ひつまぶし・手羽先</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@369qpyqt">LINEで話す →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case base-case" id="base" aria-labelledby="baseTitle">
+      <div class="section-inner">
+        <div class="case-head reveal">
+          <div class="case-id">03 / KIRAMEKI BASE</div>
+          <div>
+            <h2 id="baseTitle">煌BASE</h2>
+            <div class="case-tags"><span>Product Design</span><span>Magnet</span><span>Makuake</span></div>
+          </div>
+          <div>
+            <p>市販アクスタを付属台座から外し、そのアクスタ自身の差し込み部を装着できる専用マグネットベース。差し込み部の幅や外形ではなく、<span class="keep">約3mmの板厚</span>を基準に保持します。</p>
+            <a class="case-official-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">煌BASE Makuakeページへ <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="base-product-hero">
+        <img src="./assets/sunpro/base-product-v3.jpg" alt="透明なクリスタルカットケースと4本の保持リブ、薄乳白色のエラストマー面を備えた煌BASE" width="1672" height="941" loading="lazy">
+        <div class="base-product-copy">
+          <p class="eyebrow">Acrylic Stand Magnetic Base</p>
+          <h3>KIRAMEKI<br>BASE<span class="jp">いつものアクスタを、差し替えて飾る。</span></h3>
+          <p>直径54mm、高さ18.1mm、重さ約21g。<span class="keep">透明ケースと一体の4本の保持リブ</span>が前後2スロットを構成し、内側の<span class="keep">半透明エラストマークリップ</span>が約3mm厚の<span class="keep">差し込み部の厚み面</span>に接して支えます。<span class="keep">ネオジウム磁石2個</span>は<span class="keep">透明ボディ内部</span>に<span class="keep">埋め込まれています。</span></p>
+          <ul class="product-points">
+            <li>透明ケース / クリスタルカット</li>
+            <li>約3mm厚 / 前後2スロット</li>
+            <li>ネオジウム磁石2個内蔵</li>
+          </ul>
+          <a class="button is-yellow" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">Makuakeで詳しく見る <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="base-lab">
+        <div class="section-inner base-lab-grid">
+          <div class="base-lab-copy reveal">
+            <p class="eyebrow">Assembly Structure</p>
+            <h3><span class="phrase">市販アクスタの</span><span class="phrase">差し込み部を、</span><span class="phrase">そのまま。</span></h3>
+            <p><span class="keep">煌BASE</span>はキャラクター本体を直接挟む製品ではありません。人物の輪郭に沿ってカットされた市販アクスタを元の台座から外し、下端に一体となった差し込み部を前後どちらかのスロットへ装着します。</p>
+            <ol class="assembly-process" aria-label="市販アクスタを煌BASEへ装着する流れ">
+              <li><span class="number">01</span><div><strong>元の台座からアクスタを外す</strong><p>手持ちのアクスタ本体と付属台座を分けます。</p></div></li>
+              <li><span class="number">02</span><div><strong>一体の差し込み部をそのまま挿す</strong><p>幅や外形ではなく、目安となる約3mmの板厚で保持します。</p></div></li>
+              <li><span class="number">03</span><div><strong>透明リブとエラストマーで支える</strong><p>前後2スロットの内側で、半透明クリップがアクリルの厚み面に接します。</p></div></li>
+            </ol>
+          </div>
+
+          <div class="reveal">
+            <figure class="assembly-visual">
+              <video class="assembly-scene assembly-video" autoplay muted loop playsinline preload="metadata" poster="./assets/sunpro/official-base/base-mounting-poster.jpg" aria-label="人物輪郭に沿った徳川あおいのアクスタを煌BASEへ差し込む実写動画">
+                <source src="./assets/sunpro/official-base/base-mounting.mp4" type="video/mp4">
+              </video>
+              <figcaption class="assembly-status">Official Footage / Mounting</figcaption>
+            </figure>
+          </div>
+
+          <div class="mechanism-strip reveal">
+            <button class="mechanism-diagram-trigger" type="button" data-media-kind="image" data-media-src="./assets/sunpro/official-base/base-dimensions.png" data-media-alt="煌BASEの側面図、上面図、直径54mm、高さ18.1mm、差込口3.4mmを示す公式寸法図" data-media-caption="煌BASE 公式寸法図" aria-label="煌BASEの公式寸法図を拡大表示">
+              <img class="mechanism-diagram" src="./assets/sunpro/official-base/base-dimensions.png" alt="煌BASEの側面図、上面図、直径54mm、高さ18.1mm、差込口3.4mmを示す公式寸法図" width="1231" height="738" loading="lazy">
+              <span class="media-zoom-label">拡大 <span aria-hidden="true">＋</span></span>
+            </button>
+            <div class="mechanism-copy">
+              <p class="eyebrow">Approx. 3 mm / Two Slots</p>
+              <h4>差し込み部の<span class="keep">幅ではなく、</span><span class="keep">板厚で支える。</span></h4>
+              <p><span class="keep">透明ケース一体の4本のリブ</span>がつくる前後2スロットに、<span class="keep">半透明エラストマークリップ</span>を配置。差し込み部の幅や外形が異なっても、<span class="keep">厚さが約3mm</span>ならアクリルの厚み面を支えます。片側だけでも使え、<span class="keep">キャラクターとロゴ・背景、</span><span class="keep">アクスタ2枚</span>などの組み合わせにも対応します。形状や重さによって使用できない場合があります。</p>
+              <div class="slot-schema" aria-label="前後2スロットを構成するクリップ">
+                <div class="slot-schema-row"><i aria-hidden="true"></i><b>FRONT SLOT / 3.4 MM OPENING</b><i aria-hidden="true"></i></div>
+                <div class="slot-schema-row"><i aria-hidden="true"></i><b>REAR SLOT / 3.4 MM OPENING</b><i aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="base-proof reveal" aria-labelledby="baseProofTitle">
+            <div class="base-proof-head">
+              <div>
+                <p class="eyebrow">Official Product Footage</p>
+                <h4 id="baseProofTitle">実物で確かめる、<span class="keep">2つの使い方。</span></h4>
+              </div>
+              <p>実際の煌BASEと輪郭型アクスタで、差し込み部の幅が異なる場合と、前後2スロットを使う場合の動きを確認できます。</p>
+            </div>
+            <div class="base-proof-grid">
+              <figure class="base-proof-item">
+                <video class="base-proof-video" autoplay muted loop playsinline preload="metadata" poster="./assets/sunpro/official-base/base-width-poster.jpg" aria-label="差し込み部の幅が異なる2種類のアクスタを煌BASEへ装着する実写動画">
+                  <source src="./assets/sunpro/official-base/base-width.mp4" type="video/mp4">
+                </video>
+                <figcaption><span>01</span><div><strong>差し込み幅が違っても</strong><p>差し込み部の幅や形ではなく、約3mmの板厚を基準に保持します。</p></div></figcaption>
+              </figure>
+              <figure class="base-proof-item">
+                <video class="base-proof-video" autoplay muted loop playsinline preload="metadata" poster="./assets/sunpro/official-base/base-two-slot-poster.jpg" aria-label="煌BASEの前後2スロットへ2枚のアクスタを装着する実写動画">
+                  <source src="./assets/sunpro/official-base/base-two-slot.mp4" type="video/mp4">
+                </video>
+                <figcaption><span>02</span><div><strong>前後2スロットへ</strong><p>キャラクターと背景・ロゴなど、2枚のアクリルを組み合わせて展示できます。</p></div></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case company-case" id="company" aria-labelledby="companyTitle">
+      <div class="section-inner">
+        <div class="case-head reveal">
+          <div class="case-id">04 / SUNLIGHT INC.</div>
+          <div>
+            <h2 id="companyTitle">SUNLIGHT INC.</h2>
+            <div class="case-tags"><span>Planning</span><span>Engineering</span><span>Production</span></div>
+          </div>
+          <div>
+            <p>2004年の設立以来、プラスチック製の遊技機部品を中心に、デザイン・設計・開発・製造・販売までを支援。その技術と経験がサンプロの土台です。</p>
+            <a class="case-official-link" href="https://sunlight-net.co.jp" target="_blank" rel="noopener">株式会社サンライト 公式サイトへ <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="company-visual reveal">
+          <img src="./assets/sunpro/sunlight-workbench.jpg" alt="透明樹脂部品の試作と金型を検証する株式会社サンライトのものづくり工程" width="1672" height="941" loading="lazy">
+          <div class="company-copy">
+            <p class="eyebrow">From Idea to Production</p>
+            <h3>培った技術と経験で、次なる挑戦へ。</h3>
+            <p>企画提案からデザイン、機械設計、試作、金型製作、検証、製造、検査、納品まで。プラスチック製品・樹脂製品を一貫して形にします。</p>
+            <a class="button is-dark" href="https://sunlight-net.co.jp" target="_blank" rel="noopener">株式会社サンライト <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="process reveal" aria-label="サンライトのものづくり工程">
+          <div class="process-step"><span>STEP 01</span><h4>企画提案</h4><p>商品コンセプトから全体のデザインと機構を考えます。</p></div>
+          <div class="process-step"><span>STEP 02</span><h4>デザイン</h4><p>盤面意匠、可動体、プレゼン資料や動画、立体試作を制作します。</p></div>
+          <div class="process-step"><span>STEP 03</span><h4>設計業務</h4><p>機械設計と意匠設計を行い、デザインを機構図面へ展開します。</p></div>
+          <div class="process-step"><span>STEP 04</span><h4>試作</h4><p>樹脂・電子部品の試作と、動作・試打ち・耐久検証を行います。</p></div>
+          <div class="process-step"><span>STEP 05</span><h4>金型製作</h4><p>量産部品を作るための金型を製作します。</p></div>
+          <div class="process-step"><span>STEP 06</span><h4>検証</h4><p>金型完成後、試験室で動作・試打ち・耐久を確認します。</p></div>
+          <div class="process-step"><span>STEP 07</span><h4>製造</h4><p>治具や手順書を整え、部品受入検査と組み立てを行います。</p></div>
+          <div class="process-step"><span>STEP 08</span><h4>検査</h4><p>承認仕様と同一条件の製品になっているか検査します。</p></div>
+          <div class="process-step"><span>STEP 09</span><h4>出荷・納品</h4><p>アッセンブリーしたユニット単位で出荷・納品します。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="finalTitle">
+      <div class="section-inner">
+        <p class="eyebrow">Next Project</p>
+        <h2 id="finalTitle"><span class="phrase">好きな時間を、</span><span class="phrase">もっと面白く。</span></h2>
+        <p class="final-lead"><span class="phrase"><span class="keep">煌TIMES</span>の物語、</span><span class="phrase"><span class="keep">煌BASE</span>のプロダクト、</span><span class="phrase">サンライトのものづくり。</span><span class="phrase">それぞれの続きは</span><span class="phrase">公式ページでご覧いただけます。</span></p>
+        <div class="final-links">
+          <a class="final-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener"><span>01</span><strong>煌TIMES 公式サイト</strong><span aria-hidden="true">↗</span></a>
+          <a class="final-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener" aria-label="煌BASE Makuakeプロジェクト"><span>02</span><strong>煌BASE Makuake<span class="final-link-wide">プロジェクト</span></strong><span aria-hidden="true">↗</span></a>
+          <a class="final-link" href="https://sunlight-net.co.jp" target="_blank" rel="noopener"><span>03</span><strong>株式会社サンライト</strong><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="media-dialog" id="mediaDialog" aria-label="画像・プロフィールの拡大表示">
+    <div class="media-dialog-shell">
+      <button class="media-dialog-close" id="mediaDialogClose" type="button" aria-label="拡大表示を閉じる">×</button>
+      <div class="media-dialog-body" id="mediaDialogBody"></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-inner">
+      <div>&copy; 2026 KIRAMEKI TIMES / SUNLIGHT INC.</div>
+      <div class="footer-links">
+        <a href="#top">Top</a>
+        <a href="#about">Sunpro</a>
+        <a href="#kirameki">煌TIMES</a>
+        <a href="#base">煌BASE</a>
+        <a href="#company">Sunlight</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileClose = document.getElementById("mobileClose");
+
+    function setMenu(open) {
+      mobileMenu.classList.toggle("is-open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+
+    menuButton.addEventListener("click", () => setMenu(true));
+    mobileClose.addEventListener("click", () => setMenu(false));
+    mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setMenu(false);
+    });
+
+    const mediaDialog = document.getElementById("mediaDialog");
+    const mediaDialogBody = document.getElementById("mediaDialogBody");
+    const mediaDialogClose = document.getElementById("mediaDialogClose");
+    let mediaDialogReturnFocus = null;
+
+    function openMediaDialog(trigger) {
+      mediaDialogReturnFocus = trigger;
+      mediaDialogBody.replaceChildren();
+
+      if (trigger.dataset.mediaKind === "member") {
+        const card = trigger.closest(".cast-static-card");
+        const member = document.createElement("div");
+        const portrait = document.createElement("div");
+        const image = trigger.querySelector("img").cloneNode(true);
+        const copy = card.querySelector(".cast-static-copy").cloneNode(true);
+
+        member.className = "media-dialog-member";
+        portrait.className = "media-dialog-member-portrait";
+        portrait.dataset.number = trigger.dataset.number;
+        portrait.style.backgroundColor = getComputedStyle(trigger).backgroundColor;
+        portrait.append(image);
+        member.append(portrait, copy);
+        mediaDialogBody.append(member);
+      } else {
+        const image = document.createElement("img");
+        const caption = document.createElement("p");
+
+        image.className = "media-dialog-image";
+        image.src = trigger.dataset.mediaSrc;
+        image.alt = trigger.dataset.mediaAlt || "";
+        caption.className = "media-dialog-caption";
+        caption.textContent = trigger.dataset.mediaCaption || image.alt;
+        mediaDialogBody.append(image, caption);
+      }
+
+      mediaDialog.showModal();
+      document.body.style.overflow = "hidden";
+      mediaDialogClose.focus();
+    }
+
+    document.querySelectorAll("[data-media-kind]").forEach((trigger) => {
+      trigger.addEventListener("click", () => openMediaDialog(trigger));
+    });
+
+    mediaDialogClose.addEventListener("click", () => mediaDialog.close());
+    mediaDialog.addEventListener("click", (event) => {
+      if (event.target === mediaDialog) mediaDialog.close();
+    });
+    mediaDialog.addEventListener("close", () => {
+      document.body.style.overflow = "";
+      mediaDialogReturnFocus?.focus();
+    });
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach((video) => {
+        video.removeAttribute("autoplay");
+        video.pause();
+      });
+    }
+  </script>
+</body>
+</html>
