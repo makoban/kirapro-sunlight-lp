@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUNLIGHT PRODUCE | サンライトプロデュース 煌TIMES事業部</title>
-  <meta name="description" content="サンライトプロデュースは、名古屋発アイドルユニット「煌TIMES」のキャラクター企画と、株式会社サンライトのものづくりをつなぐプロデュース事業部です。アクスタ専用マグネットベース「煌BASE」など、世界観と技術を横断するプロジェクトを紹介します。">
-  <meta name="keywords" content="サンライトプロデュース,サンプロ,煌TIMES,煌BASE,アクスタ台座,キャラクター企画,株式会社サンライト,名古屋,Makuake">
+  <title>KIRAPRO（キラプロ）| 煌TIMESとサンライトのプロデュースブランド</title>
+  <meta name="description" content="KIRAPRO（キラプロ）は、名古屋発アイドルユニット「煌TIMES」のキャラクター企画と、株式会社サンライトが培う樹脂・プラスチックのものづくりをつなぐプロデュースブランドです。アクスタ専用マグネットベース「煌BASE」など、世界観と技術を横断するプロジェクトを紹介します。">
+  <meta name="keywords" content="KIRAPRO,キラプロ,煌TIMES,煌BASE,アクスタ台座,キャラクター企画,樹脂製品,プラスチック製品,株式会社サンライト,名古屋,Makuake">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://kirapro.sunlight-net.co.jp/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SUNLIGHT PRODUCE">
-  <meta property="og:title" content="SUNLIGHT PRODUCE | サンライトプロデュース">
-  <meta property="og:description" content="キャラクターとものづくりを、ひとつの体験へ。煌TIMES、煌BASE、株式会社サンライトのプロジェクトを紹介します。">
+  <meta property="og:site_name" content="KIRAPRO">
+  <meta property="og:title" content="KIRAPRO（キラプロ）| 煌TIMES × SUNLIGHT">
+  <meta property="og:description" content="キャラクターと樹脂のものづくりを、ひとつの体験へ。KIRAPRO、煌TIMES、煌BASE、株式会社サンライトのプロジェクトを紹介します。">
   <meta property="og:url" content="https://kirapro.sunlight-net.co.jp/">
   <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SUNLIGHT PRODUCE | サンライトプロデュース">
-  <meta name="twitter:description" content="キャラクターとものづくりを、ひとつの体験へ。">
+  <meta name="twitter:title" content="KIRAPRO（キラプロ）| 煌TIMES × SUNLIGHT">
+  <meta name="twitter:description" content="キャラクターと樹脂のものづくりを、ひとつの体験へ。">
   <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
   <link rel="icon" type="image/webp" href="./パッケージ/タイトル透明.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,14 +24,14 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
   <style>
     :root {
-      --paper: #f4f3ef;
+      --paper: #f4f6f8;
       --white: #ffffff;
-      --ink: #101010;
-      --muted: #666560;
-      --line: #cbc9c1;
-      --blue: #1239f4;
-      --red: #ef3d2f;
-      --yellow: #f6ca28;
+      --ink: #071b3f;
+      --muted: #5a6372;
+      --line: #bdc6d2;
+      --blue: #073b91;
+      --red: #ef2515;
+      --yellow: #f9b900;
       --max: 1320px;
       --pad: 48px;
       --sans: "Noto Sans JP", sans-serif;
@@ -143,8 +143,8 @@
       align-items: center;
       gap: 32px;
       padding: 0 var(--pad);
-      background: rgba(244, 243, 239, 0.92);
-      border-bottom: 1px solid rgba(16, 16, 16, 0.12);
+      background: rgba(244, 246, 248, 0.94);
+      border-bottom: 1px solid rgba(7, 27, 63, 0.14);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -342,7 +342,7 @@
 
     .hero-logo-stage {
       position: relative;
-      width: min(720px, 62vw);
+      width: min(760px, 66vw);
       max-width: 100%;
       min-height: 150px;
       margin-top: 12px;
@@ -362,6 +362,18 @@
       transform: skewX(-8deg);
     }
 
+    .hero-logo-stage::after {
+      content: "";
+      position: absolute;
+      left: 8%;
+      right: -2%;
+      top: calc(52% + 8px);
+      height: 3px;
+      background: var(--red);
+      opacity: 0.54;
+      transform: skewX(-8deg);
+    }
+
     .hero-logo-puck {
       position: relative;
       z-index: 3;
@@ -378,13 +390,14 @@
       width: 100%;
       max-width: 100%;
       height: auto;
+      filter: drop-shadow(0 8px 18px rgba(7, 27, 63, 0.18));
       pointer-events: none;
     }
 
     .hero-logo-echo {
       position: absolute;
       z-index: 1;
-      width: 260px;
+      width: 160px;
       height: auto;
       opacity: 0.1;
       pointer-events: none;
@@ -623,11 +636,10 @@
     .brand-lockup img {
       width: min(680px, 92%);
       height: auto;
-      mix-blend-mode: multiply;
     }
 
     .brand-lockup.is-short img {
-      width: min(360px, 76%);
+      width: min(250px, 64%);
     }
 
     .capabilities {
@@ -1523,9 +1535,45 @@
     }
 
     .final {
+      position: relative;
       padding: 100px 0 44px;
-      background: var(--red);
+      overflow: hidden;
+      background: var(--blue);
       color: var(--white);
+    }
+
+    .final::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 38%;
+      height: 10px;
+      background: var(--yellow);
+    }
+
+    .final::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 38%;
+      right: 0;
+      height: 10px;
+      background: var(--red);
+    }
+
+    .final-brand {
+      width: min(520px, 100%);
+      margin-bottom: 58px;
+      padding: 18px 26px 16px;
+      background: var(--white);
+      border-left: 7px solid var(--yellow);
+      box-shadow: 18px 18px 0 rgba(239, 37, 21, 0.88);
+    }
+
+    .final-brand img {
+      width: 100%;
+      height: auto;
     }
 
     .final h2 {
@@ -1579,7 +1627,7 @@
     }
 
     footer {
-      background: var(--ink);
+      background: #04142f;
       color: var(--white);
       padding: 34px var(--pad);
     }
@@ -1864,7 +1912,7 @@
       }
 
       .hero-logo-echo {
-        width: 150px;
+        width: 94px;
       }
 
       .hero-logo-echo.echo-one {
@@ -1932,6 +1980,14 @@
 
       .sunpro-brand-board {
         margin-top: 40px;
+      }
+
+      .final-brand {
+        width: min(360px, calc(100% - 18px));
+        margin-bottom: 46px;
+        padding: 14px 18px 12px;
+        border-left-width: 5px;
+        box-shadow: 12px 12px 0 rgba(239, 37, 21, 0.88);
       }
 
       .brand-lockup {
@@ -2319,11 +2375,11 @@
   <a class="skip-link" href="#main">本文へ移動</a>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="サンライトプロデュース トップへ">
-      <img src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="サンプロ" width="446" height="112">
+    <a class="brand" href="#top" aria-label="KIRAPRO トップへ">
+      <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO" width="1439" height="328">
     </a>
     <nav class="nav" aria-label="グローバルナビゲーション">
-      <a href="#about">Sunpro</a>
+      <a href="#about">KIRAPRO</a>
       <a href="#kirameki">煌TIMES</a>
       <a href="#base">煌BASE</a>
       <a href="#company">Sunlight</a>
@@ -2338,7 +2394,7 @@
 
   <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
     <button class="mobile-close" id="mobileClose" type="button" aria-label="メニューを閉じる">×</button>
-    <a href="#about">Sunpro <span>01</span></a>
+    <a href="#about">KIRAPRO <span>01</span></a>
     <a href="#kirameki">煌TIMES <span>02</span></a>
     <a href="#base">煌BASE <span>03</span></a>
     <a href="#company">Sunlight <span>04</span></a>
@@ -2346,21 +2402,21 @@
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="heroTitle">
-      <img class="hero-background" src="./assets/sunpro/hero-kinetic.jpg" alt="光、レール、透明素材が動き出すサンライトプロデュースの抽象的なクリエイティブ装置" width="1672" height="941" fetchpriority="high">
+      <img class="hero-background" src="./assets/sunpro/hero-kinetic.jpg" alt="光、レール、透明樹脂素材が動き出すKIRAPROのクリエイティブ装置" width="1672" height="941" fetchpriority="high">
       <div class="hero-copy">
         <p class="eyebrow">Kirameki Times Division / Nagoya</p>
-        <h1 id="heroTitle">サンライトプロデュース</h1>
+        <h1 id="heroTitle">KIRAPRO（キラプロ）</h1>
         <div class="hero-logo-stage" id="heroLogoStage">
           <div class="hero-logo-puck">
-            <img src="./assets/sunpro/sunpro-logo-b-full-alpha.png" alt="SUNLIGHT PRODUCE サンライトプロデュース" width="830" height="112">
+            <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO キラプロ" width="1439" height="328">
           </div>
-          <img class="hero-logo-echo echo-one" src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="" width="446" height="112" aria-hidden="true">
-          <img class="hero-logo-echo echo-two" src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="" width="446" height="112" aria-hidden="true">
+          <img class="hero-logo-echo echo-one" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
+          <img class="hero-logo-echo echo-two" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
         </div>
         <p class="hero-tagline"><span class="phrase">好きと技術をつないで、</span><span class="phrase">まだない楽しさを</span><span class="phrase">プロデュース。</span></p>
         <p class="hero-description"><span class="phrase">キャラクター、音楽、</span><span class="phrase">デジタル体験、プロダクト。</span><span class="phrase"><span class="keep">煌TIMES</span>と<span class="keep">株式会社サンライト</span>の</span><span class="phrase">ものづくりを横断し、</span><span class="phrase">企画を触れられる体験へ育てます。</span></p>
         <div class="hero-actions">
-          <a class="button is-dark" href="#about">サンプロを知る <span aria-hidden="true">↓</span></a>
+          <a class="button is-dark" href="#about">KIRAPROを知る <span aria-hidden="true">↓</span></a>
           <a class="button is-yellow" href="#kirameki">煌TIMESを知る <span aria-hidden="true">↓</span></a>
           <a class="button" href="#base">煌BASEを見る <span aria-hidden="true">↓</span></a>
           <a class="button" href="#company" aria-label="株式会社サンライトを知る"><span><span class="hero-button-company-prefix">株式会社</span>サンライトを知る</span><span aria-hidden="true">↓</span></a>
@@ -2379,24 +2435,24 @@
     <section class="intro" id="about">
       <div class="section-inner">
         <div class="intro-grid">
-          <div class="section-number reveal">01 / SUNLIGHT PRODUCE</div>
+          <div class="section-number reveal">01 / KIRAPRO</div>
           <div>
             <h2 class="reveal">好きの熱量を、<span class="blue">企画</span>に。<br>技術の蓄積を、<span class="red">体験</span>に。</h2>
             <div class="intro-copy reveal">
-              <p><span class="keep">サンライトプロデュース</span>、通称「サンプロ」は、<span class="keep">煌TIMES</span>の世界観と、<span class="keep">株式会社サンライト</span>が培ってきた設計・開発・製造の技術をつなぐプロデュース事業部です。</p>
+              <p><span class="keep">KIRAPRO（キラプロ）</span>は、<span class="keep">煌TIMES</span>の世界観と、<span class="keep">株式会社サンライト</span>が培ってきた設計・開発・製造の技術をつなぐプロデュースブランドです。</p>
               <p>キャラクターをつくるだけで終わらず、音楽、映像、会話、イベント、プロダクトへ。企画から実際に触れられる体験までを一つの流れとして育てます。</p>
             </div>
           </div>
         </div>
 
-        <div class="sunpro-brand-board reveal" aria-label="サンプロ ロゴシステム">
+        <div class="sunpro-brand-board reveal" aria-label="KIRAPRO ロゴシステム">
           <div class="brand-lockup">
-            <small>Primary Logo / Light &amp; Spark</small>
-            <img src="./assets/sunpro/sunpro-logo-b-full-alpha.png" alt="SUNLIGHT PRODUCE サンライトプロデュース ロゴ" width="830" height="112" loading="lazy">
+            <small>Primary Logo / Resin Flow</small>
+            <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO キラプロ ロゴ" width="1439" height="328" loading="lazy">
           </div>
           <div class="brand-lockup is-short">
-            <small>Short Logo / SUNPRO</small>
-            <img src="./assets/sunpro/sunpro-logo-b-short-alpha.png" alt="SUNPRO サンプロ ロゴ" width="446" height="112" loading="lazy">
+            <small>Symbol / KP Monogram</small>
+            <img src="./assets/sunpro/kirapro-mark-alpha.png" alt="KIRAPRO KPシンボル" width="442" height="328" loading="lazy">
           </div>
         </div>
 
@@ -2579,7 +2635,7 @@
             <div class="case-tags"><span>Planning</span><span>Engineering</span><span>Production</span></div>
           </div>
           <div>
-            <p>2004年の設立以来、プラスチック製の遊技機部品を中心に、デザイン・設計・開発・製造・販売までを支援。その技術と経験がサンプロの土台です。</p>
+            <p>2004年の設立以来、プラスチック製の遊技機部品を中心に、デザイン・設計・開発・製造・販売までを支援。その技術と経験がKIRAPROの土台です。</p>
             <a class="case-official-link" href="https://sunlight-net.co.jp" target="_blank" rel="noopener">株式会社サンライト 公式サイトへ <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -2610,7 +2666,8 @@
 
     <section class="final" aria-labelledby="finalTitle">
       <div class="section-inner">
-        <p class="eyebrow">Next Project</p>
+        <div class="final-brand reveal"><img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO" width="1439" height="328" loading="lazy"></div>
+        <p class="eyebrow">KIRAPRO / Next Project</p>
         <h2 id="finalTitle"><span class="phrase">好きな時間を、</span><span class="phrase">もっと面白く。</span></h2>
         <p class="final-lead"><span class="phrase"><span class="keep">煌TIMES</span>の物語、</span><span class="phrase"><span class="keep">煌BASE</span>のプロダクト、</span><span class="phrase">サンライトのものづくり。</span><span class="phrase">それぞれの続きは</span><span class="phrase">公式ページでご覧いただけます。</span></p>
         <div class="final-links">
@@ -2634,7 +2691,7 @@
       <div>&copy; 2026 KIRAMEKI TIMES / SUNLIGHT INC.</div>
       <div class="footer-links">
         <a href="#top">Top</a>
-        <a href="#about">Sunpro</a>
+        <a href="#about">KIRAPRO</a>
         <a href="#kirameki">煌TIMES</a>
         <a href="#base">煌BASE</a>
         <a href="#company">Sunlight</a>
