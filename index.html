@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KIRAPRO（キラプロ）| 煌TIMESとサンライトのプロデュースブランド</title>
-  <meta name="description" content="KIRAPRO（キラプロ）は、名古屋発アイドルユニット「煌TIMES」のキャラクター企画と、株式会社サンライトが培う樹脂・プラスチックのものづくりをつなぐプロデュースブランドです。アクスタ専用マグネットベース「煌BASE」など、世界観と技術を横断するプロジェクトを紹介します。">
-  <meta name="keywords" content="KIRAPRO,キラプロ,煌TIMES,煌BASE,アクスタ台座,キャラクター企画,樹脂製品,プラスチック製品,株式会社サンライト,名古屋,Makuake">
+  <title>KIRAPRO（キラプロ）| 推し活アイテムの商品開発・販売</title>
+  <meta name="description" content="KIRAPRO（キラプロ）は、推し活生活をもっと楽しく、もっと自由にするアイテムを企画・開発・販売するブランドです。第一弾商品は、約3mm厚のアクスタを支えるマグネット内蔵台座「煌BASE」。">
+  <meta name="keywords" content="KIRAPRO,キラプロ,煌BASE,アクスタ台座,推し活グッズ,推し活アイテム,商品開発,株式会社サンライト,煌TIMES,名古屋,Makuake">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://kirapro.sunlight-net.co.jp/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="KIRAPRO">
-  <meta property="og:title" content="KIRAPRO（キラプロ）| 煌TIMES × SUNLIGHT">
-  <meta property="og:description" content="キャラクターと樹脂のものづくりを、ひとつの体験へ。KIRAPRO、煌TIMES、煌BASE、株式会社サンライトのプロジェクトを紹介します。">
+  <meta property="og:site_name" content="煌TIMES">
+  <meta property="og:title" content="KIRAPRO（キラプロ）| 推し活アイテムの商品開発・販売">
+  <meta property="og:description" content="推し活生活をアシストする商品を企画・開発・販売。第一弾商品「煌BASE」を紹介します。">
   <meta property="og:url" content="https://kirapro.sunlight-net.co.jp/">
-  <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
+  <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/official-base/makuake-main.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KIRAPRO（キラプロ）| 煌TIMES × SUNLIGHT">
-  <meta name="twitter:description" content="キャラクターと樹脂のものづくりを、ひとつの体験へ。">
-  <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-kinetic.jpg">
+  <meta name="twitter:title" content="KIRAPRO（キラプロ）| 推し活アイテムの商品開発・販売">
+  <meta name="twitter:description" content="推し活生活をアシストする商品を企画・開発・販売。第一弾商品は「煌BASE」。">
+  <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/official-base/makuake-main.png">
   <link rel="icon" type="image/webp" href="./パッケージ/タイトル透明.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2369,6 +2369,252 @@
         transform: none;
       }
     }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(2, 8, 18, 0.94) 0%, rgba(2, 8, 18, 0.82) 38%, rgba(2, 8, 18, 0.22) 68%, rgba(2, 8, 18, 0.04) 100%);
+      pointer-events: none;
+    }
+
+    .hero-background {
+      inset: 0;
+      object-position: 72% center;
+      transform: none;
+    }
+
+    .hero .eyebrow,
+    .hero h1,
+    .hero-tagline,
+    .hero-description {
+      color: var(--white);
+    }
+
+    .hero-logo-stage {
+      width: min(640px, 54vw);
+    }
+
+    .hero-logo-puck img {
+      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9)) drop-shadow(0 9px 24px rgba(0, 0, 0, 0.46));
+    }
+
+    .hero-actions .button:not(.is-yellow) {
+      border-color: rgba(255, 255, 255, 0.86);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-actions .button.is-dark {
+      border-color: var(--white);
+      background: rgba(7, 27, 63, 0.94);
+    }
+
+    .intro-grid > *,
+    .intro-copy > *,
+    .case-head > *,
+    .base-lab-grid > * {
+      min-width: 0;
+    }
+
+    .product-link-banner {
+      position: relative;
+      display: block;
+      margin-top: 64px;
+      overflow: hidden;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .product-link-banner img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      transition: transform 0.5s var(--ease), opacity 0.3s;
+    }
+
+    .product-link-banner > span {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      min-width: 310px;
+      min-height: 58px;
+      padding: 0 22px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .product-link-banner:hover img {
+      transform: scale(1.018);
+      opacity: 0.94;
+    }
+
+    .case-link-button {
+      min-height: 44px;
+      margin-top: 18px;
+      padding: 0 16px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      background: var(--ink);
+      color: var(--white);
+      transition: transform 0.25s var(--ease), background 0.25s, color 0.25s;
+    }
+
+    .case-link-button:hover {
+      gap: 24px;
+      transform: translateY(-2px);
+      background: var(--yellow);
+      color: var(--ink);
+    }
+
+    .base-case .case-link-button {
+      border-color: var(--yellow);
+      background: var(--yellow);
+      color: var(--ink);
+    }
+
+    .base-case .case-link-button:hover {
+      background: var(--white);
+    }
+
+    .workwear-board {
+      position: relative;
+      width: min(720px, 100%);
+      margin: 0 auto;
+      border: 1px solid var(--ink);
+      background: #73e2e8;
+    }
+
+    .workwear-board-trigger {
+      position: relative;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      background: #73e2e8;
+    }
+
+    .workwear-board-trigger img {
+      width: 100%;
+      max-height: 760px;
+      object-fit: contain;
+      transition: transform 0.45s var(--ease);
+    }
+
+    .workwear-board-trigger:hover img {
+      transform: scale(1.012);
+    }
+
+    .workwear-board figcaption {
+      padding: 10px 14px;
+      border-top: 1px solid var(--ink);
+      background: var(--white);
+      font-family: var(--mono);
+      font-size: 10px;
+    }
+
+    .workwear-board + .cast-static-grid {
+      margin-top: 36px;
+      border-top: 1px solid var(--ink);
+    }
+
+    @media (min-width: 1121px) {
+      .company-copy {
+        right: 2%;
+        width: 33%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-logo-stage {
+        width: min(620px, 68vw);
+      }
+
+      .product-link-banner {
+        margin-top: 48px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero::after {
+        background: linear-gradient(180deg, rgba(2, 8, 18, 0.86) 0%, rgba(2, 8, 18, 0.76) 58%, rgba(2, 8, 18, 0.92) 100%);
+      }
+
+      .hero-background {
+        object-position: 72% center;
+      }
+
+      .hero-copy {
+        padding-top: 34px;
+        padding-bottom: 34px;
+      }
+
+      .hero-logo-stage {
+        width: 100%;
+        min-height: 82px;
+      }
+
+      .hero-logo-puck {
+        min-height: 68px;
+      }
+
+      .hero-description {
+        max-width: 310px;
+        line-height: 1.65;
+      }
+
+      .intro h2 {
+        font-size: 32px;
+      }
+
+      .hero-actions {
+        margin-top: 16px;
+      }
+
+      .hero-actions .button {
+        min-height: 46px;
+        gap: 6px;
+        padding-right: 9px;
+        padding-left: 9px;
+        font-size: 11px;
+        white-space: nowrap;
+      }
+
+      .product-link-banner {
+        margin-top: 36px;
+      }
+
+      .product-link-banner > span {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        min-height: 52px;
+        padding: 0 16px;
+        font-size: 12px;
+      }
+
+      .case-link-button {
+        width: 100%;
+      }
+
+      .workwear-board-trigger img {
+        max-height: none;
+      }
+
+      .workwear-board + .cast-static-grid {
+        margin-top: 28px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -2380,12 +2626,12 @@
     </a>
     <nav class="nav" aria-label="グローバルナビゲーション">
       <a href="#about">KIRAPRO</a>
-      <a href="#kirameki">煌TIMES</a>
       <a href="#base">煌BASE</a>
+      <a href="#kirameki">煌TIMES</a>
       <a href="#company">Sunlight</a>
     </nav>
     <a class="header-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">
-      煌BASEを見る <span aria-hidden="true">↗</span>
+      煌BASEを応援購入 <span aria-hidden="true">↗</span>
     </a>
     <button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-expanded="false">
       <span></span><span></span>
@@ -2395,16 +2641,16 @@
   <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
     <button class="mobile-close" id="mobileClose" type="button" aria-label="メニューを閉じる">×</button>
     <a href="#about">KIRAPRO <span>01</span></a>
-    <a href="#kirameki">煌TIMES <span>02</span></a>
-    <a href="#base">煌BASE <span>03</span></a>
+    <a href="#base">煌BASE <span>02</span></a>
+    <a href="#kirameki">煌TIMES <span>03</span></a>
     <a href="#company">Sunlight <span>04</span></a>
   </nav>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="heroTitle">
-      <img class="hero-background" src="./assets/sunpro/hero-kinetic.jpg" alt="光、レール、透明樹脂素材が動き出すKIRAPROのクリエイティブ装置" width="1672" height="941" fetchpriority="high">
+      <img class="hero-background" src="./assets/sunpro/base-product-v3.jpg" alt="透明なクリスタルカットケースとエラストマークリップを備えたアクスタ専用台座、煌BASE" width="1672" height="941" fetchpriority="high">
       <div class="hero-copy">
-        <p class="eyebrow">Kirameki Times Division / Nagoya</p>
+        <p class="eyebrow">Oshikatsu Product Brand / Nagoya</p>
         <h1 id="heroTitle">KIRAPRO（キラプロ）</h1>
         <div class="hero-logo-stage" id="heroLogoStage">
           <div class="hero-logo-puck">
@@ -2413,12 +2659,12 @@
           <img class="hero-logo-echo echo-one" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
           <img class="hero-logo-echo echo-two" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
         </div>
-        <p class="hero-tagline"><span class="phrase">好きと技術をつないで、</span><span class="phrase">まだない楽しさを</span><span class="phrase">プロデュース。</span></p>
-        <p class="hero-description"><span class="phrase">キャラクター、音楽、</span><span class="phrase">デジタル体験、プロダクト。</span><span class="phrase"><span class="keep">煌TIMES</span>と<span class="keep">株式会社サンライト</span>の</span><span class="phrase">ものづくりを横断し、</span><span class="phrase">企画を触れられる体験へ育てます。</span></p>
+        <p class="hero-tagline"><span class="phrase">推し活を、もっと楽しく。</span><span class="phrase">ものづくりで、もっと自由に。</span></p>
+        <p class="hero-description"><span class="phrase"><span class="keep">KIRAPRO</span>は、推し活生活を</span><span class="phrase">アシストするアイテムを</span><span class="phrase">企画・開発・販売するブランドです。</span><span class="phrase">第一弾商品は、アクスタ専用の</span><span class="phrase">マグネット台座<span class="keep">「煌BASE」</span>。</span></p>
         <div class="hero-actions">
+          <a class="button is-yellow hero-shop-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">煌BASEを応援購入 <span aria-hidden="true">↗</span></a>
           <a class="button is-dark" href="#about">KIRAPROを知る <span aria-hidden="true">↓</span></a>
-          <a class="button is-yellow" href="#kirameki">煌TIMESを知る <span aria-hidden="true">↓</span></a>
-          <a class="button" href="#base">煌BASEを見る <span aria-hidden="true">↓</span></a>
+          <a class="button" href="#kirameki">煌TIMESを知る <span aria-hidden="true">↓</span></a>
           <a class="button" href="#company" aria-label="株式会社サンライトを知る"><span><span class="hero-button-company-prefix">株式会社</span>サンライトを知る</span><span aria-hidden="true">↓</span></a>
         </div>
       </div>
@@ -2427,8 +2673,8 @@
 
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>Character IP</span><span>Product Planning</span><span>Creative Direction</span><span>Plastic Engineering</span><span>Experience Design</span>
-        <span>Character IP</span><span>Product Planning</span><span>Creative Direction</span><span>Plastic Engineering</span><span>Experience Design</span>
+        <span>Oshikatsu Items</span><span>Product Planning</span><span>Product Development</span><span>Plastic Engineering</span><span>Online Sales</span>
+        <span>Oshikatsu Items</span><span>Product Planning</span><span>Product Development</span><span>Plastic Engineering</span><span>Online Sales</span>
       </div>
     </div>
 
@@ -2437,95 +2683,34 @@
         <div class="intro-grid">
           <div class="section-number reveal">01 / KIRAPRO</div>
           <div>
-            <h2 class="reveal">好きの熱量を、<span class="blue">企画</span>に。<br>技術の蓄積を、<span class="red">体験</span>に。</h2>
+            <h2 class="reveal"><span class="phrase">推し活の悩みを、</span><span class="phrase"><span class="blue">商品</span>で解決する。</span></h2>
             <div class="intro-copy reveal">
-              <p><span class="keep">KIRAPRO（キラプロ）</span>は、<span class="keep">煌TIMES</span>の世界観と、<span class="keep">株式会社サンライト</span>が培ってきた設計・開発・製造の技術をつなぐプロデュースブランドです。</p>
-              <p>キャラクターをつくるだけで終わらず、音楽、映像、会話、イベント、プロダクトへ。企画から実際に触れられる体験までを一つの流れとして育てます。</p>
+              <p><span class="keep">KIRAPRO（キラプロ）</span>は、推し活生活をもっと楽しく、もっと自由にするアイテムを企画・開発・販売するブランドです。</p>
+              <p>ファンが日常で感じる不便や「もっとこうだったら」という声を出発点に、使いやすさと見た目を両立した商品へ。<span class="keep">株式会社サンライト</span>の設計・製造技術を活かし、アイデアを実際に手に取れる形で届けます。</p>
             </div>
           </div>
         </div>
 
-        <div class="sunpro-brand-board reveal" aria-label="KIRAPRO ロゴシステム">
-          <div class="brand-lockup">
-            <small>Primary Logo / Resin Flow</small>
-            <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO キラプロ ロゴ" width="1439" height="328" loading="lazy">
-          </div>
-          <div class="brand-lockup is-short">
-            <small>Symbol / KP Monogram</small>
-            <img src="./assets/sunpro/kirapro-mark-alpha.png" alt="KIRAPRO KPシンボル" width="442" height="328" loading="lazy">
-          </div>
-        </div>
+        <a class="product-link-banner reveal" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener" aria-label="煌BASEのMakuake商品ページを見る">
+          <img src="./assets/sunpro/official-base/makuake-main.png" alt="アクスタ専用マグネットベース煌BASEの商品紹介" width="1380" height="775" loading="lazy">
+          <span>煌BASEの商品ページを見る <b aria-hidden="true">↗</b></span>
+        </a>
 
         <div class="capabilities">
           <article class="capability reveal">
-            <strong>01 / CHARACTER</strong>
-            <h3>世界観をつくり、長く育てる。</h3>
-            <p>キャラクター設計、物語、音楽、映像、LINEでの会話まで。接点を横断しながら、一人ひとりの個性を届けます。</p>
+            <strong>01 / PRODUCT IDEA</strong>
+            <h3>推し活の声から、商品を考える。</h3>
+            <p>飾る、持ち出す、入れ替える。日常にある小さな不便を見つけ、推しをもっと身近に楽しめる商品のアイデアへ変えます。</p>
           </article>
           <article class="capability reveal">
-            <strong>02 / PRODUCT</strong>
-            <h3>ファンの声を、使える形にする。</h3>
-            <p>飾る、持ち出す、入れ替える。推し活の日常にある小さな不便から、実用性と見た目を両立する製品を考えます。</p>
+            <strong>02 / DEVELOPMENT</strong>
+            <h3>使いやすさを、確かな形にする。</h3>
+            <p>デザイン、機械設計、試作、検証を重ね、見た目だけでなく繰り返し使える品質まで商品を磨き上げます。</p>
           </article>
           <article class="capability reveal">
-            <strong>03 / ENGINEERING</strong>
-            <h3>企画を、量産できる品質まで。</h3>
-            <p>デザイン、機械設計、試作、金型、検証、製造。サンライトの知見で、アイデアを実際に手に取れる製品へ進めます。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="case" id="kirameki" aria-labelledby="kiramekiTitle">
-      <div class="section-inner">
-        <div class="case-head reveal">
-          <div class="case-id">02 / KIRAMEKI TIMES</div>
-          <div>
-            <h2 id="kiramekiTitle">煌TIMES</h2>
-            <div class="case-tags"><span>Character IP</span><span>Music</span><span>LINE Bot</span></div>
-          </div>
-          <div>
-            <p>名古屋を舞台にした6人組アイドルユニット。ステージの姿と日常の素顔、その両方を行き来しながら、ファンと一緒に物語を育てます。</p>
-            <a class="case-official-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener">煌TIMES 公式サイトへ <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-
-        <figure class="ensemble reveal" id="ensemble">
-          <img class="ensemble-background" src="./assets/sunpro/case-kirameki-stage.jpg" alt="煌TIMESの6人を紹介する制作スタジオのステージ" width="1672" height="941" loading="lazy">
-          <img class="ensemble-logo" src="./パッケージ/タイトル透明.webp" alt="煌TIMES 公式ロゴ" width="1100" height="934" loading="lazy">
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/乙姫マリン.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></div>
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/大須かのん（神音）.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></div>
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/金鯱きらら.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></div>
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/徳川あおい（葵）.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></div>
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/東山さくら（桜）.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></div>
-          <div class="ensemble-member"><img src="./パッケージ/ダンスキャラ/神宮寺みこと（美琴）.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></div>
-          <figcaption class="ensemble-caption">6 MEMBERS / NAGOYA</figcaption>
-        </figure>
-
-        <div class="cast-static-grid reveal" aria-label="煌TIMESメンバー一覧">
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="01" data-media-kind="member" aria-label="乙姫マリンのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/marin_casual.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>乙姫 マリン</h3><p class="cast-static-latin">Otohime Marin</p><p class="cast-static-catch">「流れに任せてみよっか。」</p><div class="cast-static-meta"><div><span>AGE</span>23歳</div><div><span>SPOT</span>名古屋港水族館</div><div><span>FOOD</span>味噌煮込みうどん</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@561mucxu">LINEで話す →</a></div>
-          </article>
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="02" data-media-kind="member" aria-label="大須かのんのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kanon_casual.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>大須 かのん</h3><p class="cast-static-latin">Osu Kanon</p><p class="cast-static-catch">「それ、尊い…！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>大須観音</div><div><span>FOOD</span>味噌カツ・台湾ラーメン</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@120ytjyl">LINEで話す →</a></div>
-          </article>
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="03" data-media-kind="member" aria-label="金鯱きららのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kirara_casual.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>金鯱 きらら</h3><p class="cast-static-latin">Kinshachi Kirara</p><p class="cast-static-catch">「シャチっと決めよ！」</p><div class="cast-static-meta"><div><span>AGE</span>20歳</div><div><span>SPOT</span>名古屋城</div><div><span>FOOD</span>天むす・エビフライ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@545fnsmf">LINEで話す →</a></div>
-          </article>
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="04" data-media-kind="member" aria-label="徳川あおいのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/aoi_casual.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>徳川 あおい</h3><p class="cast-static-latin">Tokugawa Aoi</p><p class="cast-static-catch">「いいじゃん。やってみよ！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>徳川園</div><div><span>FOOD</span>小倉トースト</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@198jdufv">LINEで話す →</a></div>
-          </article>
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="05" data-media-kind="member" aria-label="東山さくらのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/sakura_casual.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>東山 さくら</h3><p class="cast-static-latin">Higashiyama Sakura</p><p class="cast-static-catch"><span class="phrase">「あんかけスパ、</span><span class="phrase">全力で食べるのです♪」</span></p><div class="cast-static-meta"><div><span>AGE</span>19歳</div><div><span>SPOT</span>東山動植物園</div><div><span>FOOD</span>あんかけスパゲッティ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@967bjcvh">LINEで話す →</a></div>
-          </article>
-          <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="06" data-media-kind="member" aria-label="神宮寺みことのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/mikoto_casual.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>神宮寺 みこと</h3><p class="cast-static-latin">Jinguji Mikoto</p><p class="cast-static-catch">「それ、ご利益ありそう。」</p><div class="cast-static-meta"><div><span>AGE</span>22歳</div><div><span>SPOT</span>熱田神宮</div><div><span>FOOD</span>ひつまぶし・手羽先</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@369qpyqt">LINEで話す →</a></div>
+            <strong>03 / SALES</strong>
+            <h3>できた商品を、ファンへ届ける。</h3>
+            <p>商品開発だけで終わらず、販売ページや発信まで一貫して整え、推し活を支えるアイテムとして届けます。</p>
           </article>
         </div>
       </div>
@@ -2534,14 +2719,14 @@
     <section class="case base-case" id="base" aria-labelledby="baseTitle">
       <div class="section-inner">
         <div class="case-head reveal">
-          <div class="case-id">03 / KIRAMEKI BASE</div>
+          <div class="case-id">02 / PRODUCT LINEUP</div>
           <div>
             <h2 id="baseTitle">煌BASE</h2>
-            <div class="case-tags"><span>Product Design</span><span>Magnet</span><span>Makuake</span></div>
+            <div class="case-tags"><span>Oshikatsu Item</span><span>Magnet</span><span>Makuake</span></div>
           </div>
           <div>
             <p>市販アクスタを付属台座から外し、そのアクスタ自身の差し込み部を装着できる専用マグネットベース。差し込み部の幅や外形ではなく、<span class="keep">約3mmの板厚</span>を基準に保持します。</p>
-            <a class="case-official-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">煌BASE Makuakeページへ <span aria-hidden="true">↗</span></a>
+            <a class="case-official-link case-link-button" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">Makuakeで応援購入 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
@@ -2626,6 +2811,57 @@
       </div>
     </section>
 
+    <section class="case" id="kirameki" aria-labelledby="kiramekiTitle">
+      <div class="section-inner">
+        <div class="case-head reveal">
+          <div class="case-id">03 / KIRAMEKI TIMES</div>
+          <div>
+            <h2 id="kiramekiTitle">煌TIMES</h2>
+            <div class="case-tags"><span>Character IP</span><span>Music</span><span>LINE Bot</span></div>
+          </div>
+          <div>
+            <p>名古屋を舞台にした6人組アイドルユニット。ステージの姿と日常の素顔、その両方を行き来しながら、ファンと一緒に物語を育てます。</p>
+            <a class="case-official-link case-link-button" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener">煌TIMESを知る <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="workwear-board reveal" id="ensemble">
+          <button class="workwear-board-trigger" type="button" data-media-kind="image" data-media-src="./assets/sunpro/kirameki-workwear-rgb.jpg" data-media-alt="仕事着姿の徳川あおい、乙姫マリン、神宮寺みこと、金鯱きらら、東山さくら、大須かのん" data-media-caption="煌TIMES 仕事着バージョン / 6 MEMBERS" aria-label="煌TIMESの仕事着バージョン6名を拡大表示">
+            <img src="./assets/sunpro/kirameki-workwear-rgb.jpg" alt="仕事着姿の煌TIMESメンバー6名" width="2894" height="4093" loading="lazy">
+            <span class="media-zoom-label">拡大 <span aria-hidden="true">＋</span></span>
+          </button>
+          <figcaption>WORKWEAR VERSION / 6 MEMBERS</figcaption>
+        </figure>
+
+        <div class="cast-static-grid reveal" aria-label="煌TIMESメンバー一覧">
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="01" data-media-kind="member" aria-label="乙姫マリンのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/marin_casual.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>乙姫 マリン</h3><p class="cast-static-latin">Otohime Marin</p><p class="cast-static-catch">「流れに任せてみよっか。」</p><div class="cast-static-meta"><div><span>AGE</span>23歳</div><div><span>SPOT</span>名古屋港水族館</div><div><span>FOOD</span>味噌煮込みうどん</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@561mucxu">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="02" data-media-kind="member" aria-label="大須かのんのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kanon_casual.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>大須 かのん</h3><p class="cast-static-latin">Osu Kanon</p><p class="cast-static-catch">「それ、尊い…！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>大須観音</div><div><span>FOOD</span>味噌カツ・台湾ラーメン</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@120ytjyl">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="03" data-media-kind="member" aria-label="金鯱きららのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kirara_casual.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>金鯱 きらら</h3><p class="cast-static-latin">Kinshachi Kirara</p><p class="cast-static-catch">「シャチっと決めよ！」</p><div class="cast-static-meta"><div><span>AGE</span>20歳</div><div><span>SPOT</span>名古屋城</div><div><span>FOOD</span>天むす・エビフライ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@545fnsmf">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="04" data-media-kind="member" aria-label="徳川あおいのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/aoi_casual.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>徳川 あおい</h3><p class="cast-static-latin">Tokugawa Aoi</p><p class="cast-static-catch">「いいじゃん。やってみよ！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>徳川園</div><div><span>FOOD</span>小倉トースト</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@198jdufv">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="05" data-media-kind="member" aria-label="東山さくらのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/sakura_casual.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>東山 さくら</h3><p class="cast-static-latin">Higashiyama Sakura</p><p class="cast-static-catch"><span class="phrase">「あんかけスパ、</span><span class="phrase">全力で食べるのです♪」</span></p><div class="cast-static-meta"><div><span>AGE</span>19歳</div><div><span>SPOT</span>東山動植物園</div><div><span>FOOD</span>あんかけスパゲッティ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@967bjcvh">LINEで話す →</a></div>
+          </article>
+          <article class="cast-static-card">
+            <button class="cast-static-portrait" type="button" data-number="06" data-media-kind="member" aria-label="神宮寺みことのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/mikoto_casual.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></button>
+            <div class="cast-static-copy"><h3>神宮寺 みこと</h3><p class="cast-static-latin">Jinguji Mikoto</p><p class="cast-static-catch">「それ、ご利益ありそう。」</p><div class="cast-static-meta"><div><span>AGE</span>22歳</div><div><span>SPOT</span>熱田神宮</div><div><span>FOOD</span>ひつまぶし・手羽先</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@369qpyqt">LINEで話す →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="case company-case" id="company" aria-labelledby="companyTitle">
       <div class="section-inner">
         <div class="case-head reveal">
@@ -2668,11 +2904,11 @@
       <div class="section-inner">
         <div class="final-brand reveal"><img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO" width="1439" height="328" loading="lazy"></div>
         <p class="eyebrow">KIRAPRO / Next Project</p>
-        <h2 id="finalTitle"><span class="phrase">好きな時間を、</span><span class="phrase">もっと面白く。</span></h2>
-        <p class="final-lead"><span class="phrase"><span class="keep">煌TIMES</span>の物語、</span><span class="phrase"><span class="keep">煌BASE</span>のプロダクト、</span><span class="phrase">サンライトのものづくり。</span><span class="phrase">それぞれの続きは</span><span class="phrase">公式ページでご覧いただけます。</span></p>
+        <h2 id="finalTitle"><span class="phrase">推し活を、</span><span class="phrase">商品でもっと</span><span class="phrase">自由に。</span></h2>
+        <p class="final-lead"><span class="phrase"><span class="keep">KIRAPRO</span>は、日常の推し活を</span><span class="phrase">アシストする商品を</span><span class="phrase">企画・開発・販売します。</span><span class="phrase"><span class="keep">煌BASE</span>、<span class="keep">煌TIMES</span>、</span><span class="phrase"><span class="keep">株式会社サンライト</span>の詳細は</span><span class="phrase">各公式ページでご覧いただけます。</span></p>
         <div class="final-links">
-          <a class="final-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener"><span>01</span><strong>煌TIMES 公式サイト</strong><span aria-hidden="true">↗</span></a>
-          <a class="final-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener" aria-label="煌BASE Makuakeプロジェクト"><span>02</span><strong>煌BASE Makuake<span class="final-link-wide">プロジェクト</span></strong><span aria-hidden="true">↗</span></a>
+          <a class="final-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener" aria-label="煌BASE Makuakeプロジェクト"><span>01</span><strong>煌BASE Makuake<span class="final-link-wide">プロジェクト</span></strong><span aria-hidden="true">↗</span></a>
+          <a class="final-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener"><span>02</span><strong>煌TIMES 公式サイト</strong><span aria-hidden="true">↗</span></a>
           <a class="final-link" href="https://sunlight-net.co.jp" target="_blank" rel="noopener"><span>03</span><strong>株式会社サンライト</strong><span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -2692,8 +2928,8 @@
       <div class="footer-links">
         <a href="#top">Top</a>
         <a href="#about">KIRAPRO</a>
-        <a href="#kirameki">煌TIMES</a>
         <a href="#base">煌BASE</a>
+        <a href="#kirameki">煌TIMES</a>
         <a href="#company">Sunlight</a>
       </div>
     </div>
