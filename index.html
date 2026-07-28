@@ -13,25 +13,28 @@
   <meta property="og:title" content="KIRAPRO（キラプロ）| 推し活アイテムの商品開発・販売">
   <meta property="og:description" content="推し活生活をアシストする商品を企画・開発・販売。第一弾商品「煌BASE」を紹介します。">
   <meta property="og:url" content="https://kirapro.sunlight-net.co.jp/">
-  <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/official-base/makuake-main.png">
+  <meta property="og:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-20260728/kirameki-base-pastel-1672.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KIRAPRO（キラプロ）| 推し活アイテムの商品開発・販売">
   <meta name="twitter:description" content="推し活生活をアシストする商品を企画・開発・販売。第一弾商品は「煌BASE」。">
-  <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/official-base/makuake-main.png">
+  <meta name="twitter:image" content="https://kirapro.sunlight-net.co.jp/assets/sunpro/hero-20260728/kirameki-base-pastel-1672.webp">
   <link rel="icon" type="image/webp" href="./パッケージ/タイトル透明.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
   <style>
     :root {
-      --paper: #f4f6f8;
+      --paper: #fff8fd;
       --white: #ffffff;
-      --ink: #071b3f;
-      --muted: #5a6372;
-      --line: #bdc6d2;
-      --blue: #073b91;
-      --red: #ef2515;
-      --yellow: #f9b900;
+      --ink: #351447;
+      --muted: #745e7b;
+      --line: #e5cfe8;
+      --blue: #8d16e8;
+      --red: #ec168c;
+      --yellow: #ffca38;
+      --pink: #ff2db2;
+      --violet: #7200e8;
+      --cyan: #35c7d0;
       --max: 1320px;
       --pad: 48px;
       --sans: "Noto Sans JP", sans-serif;
@@ -143,8 +146,8 @@
       align-items: center;
       gap: 32px;
       padding: 0 var(--pad);
-      background: rgba(244, 246, 248, 0.94);
-      border-bottom: 1px solid rgba(7, 27, 63, 0.14);
+      background: rgba(255, 248, 253, 0.94);
+      border-bottom: 1px solid rgba(141, 22, 232, 0.18);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -156,7 +159,7 @@
     }
 
     .brand img {
-      width: 174px;
+      width: 188px;
       height: auto;
     }
 
@@ -200,9 +203,9 @@
       gap: 12px;
       min-height: 42px;
       padding: 0 18px;
-      background: var(--ink);
+      background: var(--violet);
       color: var(--white);
-      border: 1px solid var(--ink);
+      border: 1px solid var(--violet);
       border-radius: 4px;
       font-size: 12px;
       font-weight: 700;
@@ -237,7 +240,7 @@
       inset: 0;
       z-index: 110;
       display: none;
-      background: var(--blue);
+      background: var(--violet);
       color: var(--white);
       padding: 96px 24px 32px;
     }
@@ -274,6 +277,10 @@
       margin: 0 auto;
     }
 
+    main section[id] {
+      scroll-margin-top: 84px;
+    }
+
     .eyebrow {
       display: flex;
       align-items: center;
@@ -301,6 +308,13 @@
       margin-top: 72px;
       overflow: hidden;
       background: var(--white);
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      display: block;
+      overflow: hidden;
     }
 
     .hero-background {
@@ -832,7 +846,6 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       border-top: 1px solid var(--ink);
       border-left: 1px solid var(--ink);
-      border-top: 0;
       background: var(--white);
     }
 
@@ -840,7 +853,7 @@
       min-width: 0;
       display: grid;
       grid-template-columns: minmax(112px, 0.72fr) minmax(0, 1.28fr);
-      min-height: 290px;
+      min-height: 330px;
       border-right: 1px solid var(--ink);
       border-bottom: 1px solid var(--ink);
       background: var(--white);
@@ -853,25 +866,28 @@
       justify-content: center;
       width: 100%;
       overflow: hidden;
-      background: var(--yellow);
+      background: #dceaff;
       text-align: left;
     }
 
-    .cast-static-card:nth-child(2) .cast-static-portrait,
-    .cast-static-card:nth-child(6) .cast-static-portrait {
-      background: #dbe7ff;
+    .cast-static-card:nth-child(2) .cast-static-portrait {
+      background: #eee4ff;
+    }
+
+    .cast-static-card:nth-child(3) .cast-static-portrait {
+      background: #fff0bf;
     }
 
     .cast-static-card:nth-child(4) .cast-static-portrait {
-      background: #ffdcd7;
+      background: #ffe0e3;
     }
 
     .cast-static-card:nth-child(5) .cast-static-portrait {
-      background: #f7d9ea;
+      background: #ffe0ef;
     }
 
     .cast-static-card:nth-child(6) .cast-static-portrait {
-      background: #dcefe3;
+      background: #dff3e8;
     }
 
     .cast-static-portrait::before {
@@ -913,8 +929,8 @@
     .cast-static-portrait img {
       position: relative;
       z-index: 1;
-      width: 88%;
-      max-height: 275px;
+      width: 94%;
+      max-height: 315px;
       object-fit: contain;
       object-position: bottom;
     }
@@ -1654,6 +1670,40 @@
       color: var(--yellow);
     }
 
+    .back-to-top {
+      position: fixed;
+      right: clamp(12px, 2vw, 28px);
+      bottom: clamp(12px, 2vw, 28px);
+      z-index: 90;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 14px;
+      border: 1px solid var(--violet);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--violet);
+      box-shadow: 0 10px 28px rgba(83, 18, 108, 0.16);
+      font-size: 11px;
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.25s, transform 0.25s var(--ease), background 0.25s, color 0.25s;
+    }
+
+    .back-to-top.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background: var(--violet);
+      color: var(--white);
+    }
+
     .reveal {
       opacity: 1;
       transform: none;
@@ -2375,7 +2425,7 @@
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(90deg, rgba(2, 8, 18, 0.94) 0%, rgba(2, 8, 18, 0.82) 38%, rgba(2, 8, 18, 0.22) 68%, rgba(2, 8, 18, 0.04) 100%);
+      background: linear-gradient(90deg, rgba(255, 250, 253, 0.97) 0%, rgba(255, 248, 253, 0.9) 40%, rgba(255, 248, 253, 0.38) 64%, rgba(255, 248, 253, 0.04) 100%);
       pointer-events: none;
     }
 
@@ -2389,25 +2439,30 @@
     .hero h1,
     .hero-tagline,
     .hero-description {
-      color: var(--white);
+      color: var(--ink);
     }
 
     .hero-logo-stage {
       width: min(640px, 54vw);
     }
 
+    .hero-logo-stage::before,
+    .hero-logo-stage::after {
+      display: none;
+    }
+
     .hero-logo-puck img {
-      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9)) drop-shadow(0 9px 24px rgba(0, 0, 0, 0.46));
+      filter: drop-shadow(0 10px 20px rgba(141, 22, 232, 0.16));
     }
 
     .hero-actions .button:not(.is-yellow) {
-      border-color: rgba(255, 255, 255, 0.86);
-      background: rgba(255, 255, 255, 0.94);
+      border-color: rgba(53, 20, 71, 0.86);
+      background: rgba(255, 255, 255, 0.88);
     }
 
     .hero-actions .button.is-dark {
-      border-color: var(--white);
-      background: rgba(7, 27, 63, 0.94);
+      border-color: var(--violet);
+      background: var(--violet);
     }
 
     .intro-grid > *,
@@ -2415,6 +2470,25 @@
     .case-head > *,
     .base-lab-grid > * {
       min-width: 0;
+    }
+
+    .base-case {
+      background: #f8efff;
+      color: var(--ink);
+    }
+
+    .base-case .case-head p,
+    .base-case .case-id {
+      color: var(--muted);
+    }
+
+    .base-product-hero {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    #kirameki {
+      background: #fff7fc;
     }
 
     .product-link-banner {
@@ -2547,7 +2621,7 @@
       }
 
       .hero::after {
-        background: linear-gradient(180deg, rgba(2, 8, 18, 0.86) 0%, rgba(2, 8, 18, 0.76) 58%, rgba(2, 8, 18, 0.92) 100%);
+        background: linear-gradient(180deg, rgba(255, 250, 253, 0.92) 0%, rgba(255, 248, 253, 0.68) 48%, rgba(255, 248, 253, 0.92) 100%);
       }
 
       .hero-background {
@@ -2622,11 +2696,11 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="KIRAPRO トップへ">
-      <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO" width="1439" height="328">
+      <img src="./assets/sunpro/official-logo-20260728/kirapro-logo-6-horizontal-en-alpha.png" alt="KIRAPRO キラプロ" width="1004" height="192">
     </a>
     <nav class="nav" aria-label="グローバルナビゲーション">
       <a href="#about">KIRAPRO</a>
-      <a href="#base">煌BASE</a>
+      <a href="#base">煌BASEを知る</a>
       <a href="#kirameki">煌TIMES</a>
       <a href="#company">Sunlight</a>
     </nav>
@@ -2641,23 +2715,24 @@
   <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
     <button class="mobile-close" id="mobileClose" type="button" aria-label="メニューを閉じる">×</button>
     <a href="#about">KIRAPRO <span>01</span></a>
-    <a href="#base">煌BASE <span>02</span></a>
+    <a href="#base">煌BASEを知る <span>02</span></a>
     <a href="#kirameki">煌TIMES <span>03</span></a>
     <a href="#company">Sunlight <span>04</span></a>
   </nav>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="heroTitle">
-      <img class="hero-background" src="./assets/sunpro/base-product-v3.jpg" alt="透明なクリスタルカットケースとエラストマークリップを備えたアクスタ専用台座、煌BASE" width="1672" height="941" fetchpriority="high">
+      <picture class="hero-media">
+        <source media="(max-width: 640px)" srcset="./assets/sunpro/hero-20260728/kirameki-base-pastel-960.webp">
+        <img class="hero-background" src="./assets/sunpro/hero-20260728/kirameki-base-pastel-1672.webp" alt="白と淡いピンクの光に包まれた、透明なクリスタルカットケースと4本の保持リブを備えるアクスタ専用台座「煌BASE」" width="1672" height="941" fetchpriority="high" decoding="async">
+      </picture>
       <div class="hero-copy">
         <p class="eyebrow">Oshikatsu Product Brand / Nagoya</p>
         <h1 id="heroTitle">KIRAPRO（キラプロ）</h1>
         <div class="hero-logo-stage" id="heroLogoStage">
           <div class="hero-logo-puck">
-            <img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO キラプロ" width="1439" height="328">
+            <img src="./assets/sunpro/official-logo-20260728/kirapro-logo-3-en-alpha.png" alt="KIRAPRO キラプロ" width="957" height="246">
           </div>
-          <img class="hero-logo-echo echo-one" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
-          <img class="hero-logo-echo echo-two" src="./assets/sunpro/kirapro-mark-alpha.png" alt="" width="442" height="328" aria-hidden="true">
         </div>
         <p class="hero-tagline"><span class="phrase">推し活を、もっと楽しく。</span><span class="phrase">ものづくりで、もっと自由に。</span></p>
         <p class="hero-description"><span class="phrase"><span class="keep">KIRAPRO</span>は、推し活生活を</span><span class="phrase">アシストするアイテムを</span><span class="phrase">企画・開発・販売するブランドです。</span><span class="phrase">第一弾商品は、アクスタ専用の</span><span class="phrase">マグネット台座<span class="keep">「煌BASE」</span>。</span></p>
@@ -2825,38 +2900,30 @@
           </div>
         </div>
 
-        <figure class="workwear-board reveal" id="ensemble">
-          <button class="workwear-board-trigger" type="button" data-media-kind="image" data-media-src="./assets/sunpro/kirameki-workwear-rgb.jpg" data-media-alt="仕事着姿の徳川あおい、乙姫マリン、神宮寺みこと、金鯱きらら、東山さくら、大須かのん" data-media-caption="煌TIMES 仕事着バージョン / 6 MEMBERS" aria-label="煌TIMESの仕事着バージョン6名を拡大表示">
-            <img src="./assets/sunpro/kirameki-workwear-rgb.jpg" alt="仕事着姿の煌TIMESメンバー6名" width="2894" height="4093" loading="lazy">
-            <span class="media-zoom-label">拡大 <span aria-hidden="true">＋</span></span>
-          </button>
-          <figcaption>WORKWEAR VERSION / 6 MEMBERS</figcaption>
-        </figure>
-
         <div class="cast-static-grid reveal" aria-label="煌TIMESメンバー一覧">
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="01" data-media-kind="member" aria-label="乙姫マリンのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/marin_casual.webp" alt="乙姫マリン" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>乙姫 マリン</h3><p class="cast-static-latin">Otohime Marin</p><p class="cast-static-catch">「流れに任せてみよっか。」</p><div class="cast-static-meta"><div><span>AGE</span>23歳</div><div><span>SPOT</span>名古屋港水族館</div><div><span>FOOD</span>味噌煮込みうどん</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@561mucxu">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="01" data-media-kind="member" aria-label="乙姫マリンのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/marin-620.webp" srcset="./assets/sunpro/workwear-20260728/marin-620.webp 620w, ./assets/sunpro/workwear-20260728/marin-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="品質管理の仕事着を着た乙姫マリン" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>乙姫 マリン</h3><p class="cast-static-latin">Otohime Marin</p><p class="cast-static-catch">「流れに任せてみよっか。」</p><div class="cast-static-meta"><div><span>DEPT</span>品質管理（QC）</div><div><span>AGE</span>23歳</div><div><span>SPOT</span>名古屋港水族館</div><div><span>FOOD</span>味噌煮込みうどん</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@561mucxu&amp;return=kirapro">LINEで話す →</a></div>
           </article>
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="02" data-media-kind="member" aria-label="大須かのんのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kanon_casual.webp" alt="大須かのん" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>大須 かのん</h3><p class="cast-static-latin">Osu Kanon</p><p class="cast-static-catch">「それ、尊い…！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>大須観音</div><div><span>FOOD</span>味噌カツ・台湾ラーメン</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@120ytjyl">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="02" data-media-kind="member" aria-label="大須かのんのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/kanon-620.webp" srcset="./assets/sunpro/workwear-20260728/kanon-620.webp 620w, ./assets/sunpro/workwear-20260728/kanon-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="製造管理の仕事着を着た大須かのん" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>大須 かのん</h3><p class="cast-static-latin">Osu Kanon</p><p class="cast-static-catch">「それ、尊い…！」</p><div class="cast-static-meta"><div><span>DEPT</span>製造管理</div><div><span>AGE</span>21歳</div><div><span>SPOT</span>大須観音</div><div><span>FOOD</span>味噌カツ・台湾ラーメン</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@120ytjyl&amp;return=kirapro">LINEで話す →</a></div>
           </article>
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="03" data-media-kind="member" aria-label="金鯱きららのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/kirara_casual.webp" alt="金鯱きらら" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>金鯱 きらら</h3><p class="cast-static-latin">Kinshachi Kirara</p><p class="cast-static-catch">「シャチっと決めよ！」</p><div class="cast-static-meta"><div><span>AGE</span>20歳</div><div><span>SPOT</span>名古屋城</div><div><span>FOOD</span>天むす・エビフライ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@545fnsmf">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="03" data-media-kind="member" aria-label="金鯱きららのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/kirara-620.webp" srcset="./assets/sunpro/workwear-20260728/kirara-620.webp 620w, ./assets/sunpro/workwear-20260728/kirara-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="企画担当の仕事着を着た金鯱きらら" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>金鯱 きらら</h3><p class="cast-static-latin">Kinshachi Kirara</p><p class="cast-static-catch">「シャチっと決めよ！」</p><div class="cast-static-meta"><div><span>DEPT</span>企画（プランナー）</div><div><span>AGE</span>20歳</div><div><span>SPOT</span>名古屋城</div><div><span>FOOD</span>天むす・エビフライ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@545fnsmf&amp;return=kirapro">LINEで話す →</a></div>
           </article>
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="04" data-media-kind="member" aria-label="徳川あおいのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/aoi_casual.webp" alt="徳川あおい" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>徳川 あおい</h3><p class="cast-static-latin">Tokugawa Aoi</p><p class="cast-static-catch">「いいじゃん。やってみよ！」</p><div class="cast-static-meta"><div><span>AGE</span>21歳</div><div><span>SPOT</span>徳川園</div><div><span>FOOD</span>小倉トースト</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@198jdufv">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="04" data-media-kind="member" aria-label="徳川あおいのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/aoi-620.webp" srcset="./assets/sunpro/workwear-20260728/aoi-620.webp 620w, ./assets/sunpro/workwear-20260728/aoi-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="営業担当の仕事着を着た徳川あおい" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>徳川 あおい</h3><p class="cast-static-latin">Tokugawa Aoi</p><p class="cast-static-catch">「いいじゃん。やってみよ！」</p><div class="cast-static-meta"><div><span>DEPT</span>営業（地元メーカー営業）</div><div><span>AGE</span>21歳</div><div><span>SPOT</span>徳川園</div><div><span>FOOD</span>小倉トースト</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@198jdufv&amp;return=kirapro">LINEで話す →</a></div>
           </article>
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="05" data-media-kind="member" aria-label="東山さくらのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/sakura_casual.webp" alt="東山さくら" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>東山 さくら</h3><p class="cast-static-latin">Higashiyama Sakura</p><p class="cast-static-catch"><span class="phrase">「あんかけスパ、</span><span class="phrase">全力で食べるのです♪」</span></p><div class="cast-static-meta"><div><span>AGE</span>19歳</div><div><span>SPOT</span>東山動植物園</div><div><span>FOOD</span>あんかけスパゲッティ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@967bjcvh">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="05" data-media-kind="member" aria-label="東山さくらのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/sakura-620.webp" srcset="./assets/sunpro/workwear-20260728/sakura-620.webp 620w, ./assets/sunpro/workwear-20260728/sakura-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="デザイン担当の仕事着を着た東山さくら" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>東山 さくら</h3><p class="cast-static-latin">Higashiyama Sakura</p><p class="cast-static-catch"><span class="phrase">「あんかけスパ、</span><span class="phrase">全力で食べるのです♪」</span></p><div class="cast-static-meta"><div><span>DEPT</span>デザイン（デザイナー）</div><div><span>AGE</span>19歳</div><div><span>SPOT</span>東山動植物園</div><div><span>FOOD</span>あんかけスパゲッティ</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@967bjcvh&amp;return=kirapro">LINEで話す →</a></div>
           </article>
           <article class="cast-static-card">
-            <button class="cast-static-portrait" type="button" data-number="06" data-media-kind="member" aria-label="神宮寺みことのプロフィールを拡大"><img src="./パッケージ/カジュアルイメージ/mikoto_casual.webp" alt="神宮寺みこと" width="640" height="1125" loading="lazy"></button>
-            <div class="cast-static-copy"><h3>神宮寺 みこと</h3><p class="cast-static-latin">Jinguji Mikoto</p><p class="cast-static-catch">「それ、ご利益ありそう。」</p><div class="cast-static-meta"><div><span>AGE</span>22歳</div><div><span>SPOT</span>熱田神宮</div><div><span>FOOD</span>ひつまぶし・手羽先</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@369qpyqt">LINEで話す →</a></div>
+            <button class="cast-static-portrait" type="button" data-number="06" data-media-kind="member" aria-label="神宮寺みことのプロフィールを拡大"><img src="./assets/sunpro/workwear-20260728/mikoto-620.webp" srcset="./assets/sunpro/workwear-20260728/mikoto-620.webp 620w, ./assets/sunpro/workwear-20260728/mikoto-1240.webp 1240w" sizes="(max-width: 640px) 48vw, 240px" alt="開発・設計担当の仕事着を着た神宮寺みこと" width="620" height="1034" loading="lazy" decoding="async"></button>
+            <div class="cast-static-copy"><h3>神宮寺 みこと</h3><p class="cast-static-latin">Jinguji Mikoto</p><p class="cast-static-catch">「それ、ご利益ありそう。」</p><div class="cast-static-meta"><div><span>DEPT</span>開発・設計担当</div><div><span>AGE</span>22歳</div><div><span>SPOT</span>熱田神宮</div><div><span>FOOD</span>ひつまぶし・手羽先</div></div><a class="cast-static-link" href="https://kirameki.sunlight-net.co.jp/line-friend.html?account=@369qpyqt&amp;return=kirapro">LINEで話す →</a></div>
           </article>
         </div>
       </div>
@@ -2902,7 +2969,7 @@
 
     <section class="final" aria-labelledby="finalTitle">
       <div class="section-inner">
-        <div class="final-brand reveal"><img src="./assets/sunpro/kirapro-logo-alpha.png" alt="KIRAPRO" width="1439" height="328" loading="lazy"></div>
+        <div class="final-brand reveal"><img src="./assets/sunpro/official-logo-20260728/kirapro-logo-7-horizontal-full-alpha.png" alt="KIRAPRO キラプロ - 好きがつながる、最高の推し時間を。" width="1020" height="223" loading="lazy" decoding="async"></div>
         <p class="eyebrow">KIRAPRO / Next Project</p>
         <h2 id="finalTitle"><span class="phrase">推し活を、</span><span class="phrase">商品でもっと</span><span class="phrase">自由に。</span></h2>
         <p class="final-lead"><span class="phrase"><span class="keep">KIRAPRO</span>は、日常の推し活を</span><span class="phrase">アシストする商品を</span><span class="phrase">企画・開発・販売します。</span><span class="phrase"><span class="keep">煌BASE</span>、<span class="keep">煌TIMES</span>、</span><span class="phrase"><span class="keep">株式会社サンライト</span>の詳細は</span><span class="phrase">各公式ページでご覧いただけます。</span></p>
@@ -2935,10 +3002,13 @@
     </div>
   </footer>
 
+  <a class="back-to-top" id="backToTop" href="#top" aria-label="ページの先頭へ戻る" aria-hidden="true"><span aria-hidden="true">↑</span><span>先頭</span></a>
+
   <script>
     const menuButton = document.getElementById("menuButton");
     const mobileMenu = document.getElementById("mobileMenu");
     const mobileClose = document.getElementById("mobileClose");
+    const backToTop = document.getElementById("backToTop");
 
     function setMenu(open) {
       mobileMenu.classList.toggle("is-open", open);
@@ -2952,6 +3022,15 @@
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") setMenu(false);
     });
+
+    function updateBackToTop() {
+      const visible = window.scrollY > Math.min(window.innerHeight * 0.7, 560);
+      backToTop.classList.toggle("is-visible", visible);
+      backToTop.setAttribute("aria-hidden", String(!visible));
+    }
+
+    updateBackToTop();
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
 
     const mediaDialog = document.getElementById("mediaDialog");
     const mediaDialogBody = document.getElementById("mediaDialogBody");
