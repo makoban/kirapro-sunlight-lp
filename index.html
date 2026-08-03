@@ -18,7 +18,8 @@
   <meta name="twitter:title" content="KIRAPRE（キラプレ）| 推し活アイテムの商品開発・販売">
   <meta name="twitter:description" content="推し活生活をアシストする商品を企画・開発・販売。第一弾商品は「煌BASE」。">
   <meta name="twitter:image" content="https://kirapre.sunlight-net.co.jp/assets/sunpro/hero-20260728/kirameki-base-pastel-1672.webp">
-  <link rel="icon" type="image/webp" href="./パッケージ/タイトル透明.webp">
+  <link rel="icon" type="image/png" href="./assets/sunpro/official-icon-20260803/kirapre-icon.png">
+  <link rel="apple-touch-icon" href="./assets/sunpro/official-icon-20260803/kirapre-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
@@ -215,9 +216,9 @@
       gap: 12px;
       min-height: 42px;
       padding: 0 18px;
-      background: var(--violet);
-      color: var(--white);
-      border: 1px solid var(--violet);
+      background: var(--yellow);
+      color: var(--ink);
+      border: 1px solid var(--yellow);
       border-radius: 4px;
       font-size: 12px;
       font-weight: 700;
@@ -225,8 +226,8 @@
     }
 
     .header-link:hover {
-      background: var(--yellow);
-      color: var(--ink);
+      background: var(--violet);
+      color: var(--white);
     }
 
     .menu-button {
@@ -519,6 +520,17 @@
 
     .button.is-yellow:hover {
       background: var(--white);
+    }
+
+    .button.is-violet {
+      background: var(--violet);
+      color: var(--white);
+      border-color: var(--violet);
+    }
+
+    .button.is-violet:hover {
+      background: var(--white);
+      color: var(--ink);
     }
 
     .scroll-note {
@@ -893,24 +905,34 @@
       text-align: left;
     }
 
-    .cast-static-card:nth-child(2) .cast-static-portrait {
-      background: #eee4ff;
-    }
-
-    .cast-static-card:nth-child(3) .cast-static-portrait {
-      background: #fff0bf;
-    }
-
-    .cast-static-card:nth-child(4) .cast-static-portrait {
+    .cast-static-card:nth-child(1),
+    .cast-static-card:nth-child(1) .cast-static-portrait {
       background: #ffe0e3;
     }
 
+    .cast-static-card:nth-child(2),
+    .cast-static-card:nth-child(2) .cast-static-portrait {
+      background: #dceaff;
+    }
+
+    .cast-static-card:nth-child(3),
+    .cast-static-card:nth-child(3) .cast-static-portrait {
+      background: #dff3e8;
+    }
+
+    .cast-static-card:nth-child(4),
+    .cast-static-card:nth-child(4) .cast-static-portrait {
+      background: #fff0bf;
+    }
+
+    .cast-static-card:nth-child(5),
     .cast-static-card:nth-child(5) .cast-static-portrait {
       background: #ffe0ef;
     }
 
+    .cast-static-card:nth-child(6),
     .cast-static-card:nth-child(6) .cast-static-portrait {
-      background: #dff3e8;
+      background: #eee4ff;
     }
 
     .cast-static-portrait::before {
@@ -2746,8 +2768,8 @@
       <a href="#kirameki">煌TIMES</a>
       <a href="#company">Sunlight</a>
     </nav>
-    <a class="header-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">
-      煌BASEを応援購入 <span aria-hidden="true">↗</span>
+    <a class="header-link" href="https://kirapre.booth.pm/" target="_blank" rel="noopener">
+      煌BASE 購入サイト <span aria-hidden="true">↗</span>
     </a>
     <button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-expanded="false">
       <span></span><span></span>
@@ -2779,7 +2801,7 @@
         <p class="hero-tagline"><span class="phrase">推し活を、もっと楽しく。</span><span class="phrase">ものづくりで、もっと自由に。</span></p>
         <p class="hero-description"><span class="phrase"><span class="keep">KIRAPRE</span>は、推し活生活を</span><span class="phrase">アシストするアイテムを</span><span class="phrase">企画・開発・販売するブランドです。</span><span class="phrase">第一弾商品は、アクスタ専用の</span><span class="phrase">マグネット台座<span class="keep">「煌BASE」</span>。</span></p>
         <div class="hero-actions">
-          <a class="button is-yellow hero-shop-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">煌BASEを応援購入 <span aria-hidden="true">↗</span></a>
+          <a class="button is-yellow hero-shop-link" href="https://kirapre.booth.pm/" target="_blank" rel="noopener">煌BASE 購入サイト <span aria-hidden="true">↗</span></a>
           <a class="button is-dark" href="#about">KIRAPREを知る <span aria-hidden="true">↓</span></a>
           <a class="button" href="#kirameki">煌TIMESを知る <span aria-hidden="true">↓</span></a>
           <a class="button" href="#company" aria-label="株式会社サンライトを知る"><span><span class="hero-button-company-prefix">株式会社</span>サンライトを知る</span><span aria-hidden="true">↓</span></a>
@@ -2839,11 +2861,11 @@
           <div class="case-id">02 / PRODUCT LINEUP</div>
           <div>
             <h2 id="baseTitle">煌BASE</h2>
-            <div class="case-tags"><span>Oshikatsu Item</span><span>Magnet</span><span>Makuake</span></div>
+            <div class="case-tags"><span>Oshikatsu Item</span><span>Magnet</span><span>BOOTH</span></div>
           </div>
           <div>
             <p><span class="phrase">推しを何度差し替えても、</span><span class="phrase">グリップ感が続く耐久性を</span><span class="phrase">追求したクリップ。</span><span class="phrase">差し込み形状に縛られず、</span><span class="phrase">横挿しや斜め挿しでも自由に飾れます。</span><span class="phrase">内蔵磁石で、壁や棚も</span><span class="phrase">推しスペースに変わります。</span></p>
-            <a class="case-official-link case-link-button" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">Makuakeで応援購入 <span aria-hidden="true">↗</span></a>
+            <a class="case-official-link case-link-button" href="https://kirapre.booth.pm/" target="_blank" rel="noopener">煌BASE 購入サイト <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
@@ -2859,7 +2881,7 @@
             <li>約3mm厚 / 前後2スロット</li>
             <li>ネオジウム磁石2個内蔵</li>
           </ul>
-          <a class="button is-yellow" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">Makuakeで詳しく見る <span aria-hidden="true">↗</span></a>
+          <a class="button is-violet" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener">Makuakeで詳しく見る <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
@@ -2868,7 +2890,7 @@
           <div class="base-lab-copy reveal">
             <p class="eyebrow">Assembly Structure</p>
             <h3><span class="phrase">市販のアクスタ・</span><span class="phrase">アクキーを、</span><span class="phrase">そのまま差せます。</span></h3>
-            <p><span class="keep">煌BASE</span>はキャラクター本体を直接挟む製品ではありません。市販アクスタやアクキーを元の台座から外し、下端の差し込み部にある<span class="keep">約3mm厚の面</span>を前後どちらかの柔らかいクリップへ装着します。</p>
+            <p><span class="keep">煌BASE</span>はアクスタの差込み形状に関係なく<span class="keep">約3mm厚の面</span>を挟み込んで固定します。柔らかいクリップですので傷をつけずに繰り返し使用してもしっかりホールドします。</p>
             <ol class="assembly-process" aria-label="市販アクスタを煌BASEへ装着する流れ">
               <li><span class="number">01</span><div><strong>元の台座からアクスタを外す</strong><p>手持ちのアクスタ本体と付属台座を分けます。</p></div></li>
               <li><span class="number">02</span><div><strong>煌BASEにそのまま差してください</strong><p>差し込み形状に関係なく、目安となる約3mm厚の面を挟みます。</p></div></li>
@@ -3025,7 +3047,7 @@
         <h2 id="finalTitle"><span class="phrase">推し活を、</span><span class="phrase">商品でもっと</span><span class="phrase">自由に。</span></h2>
         <p class="final-lead"><span class="phrase"><span class="keep">KIRAPRE</span>は、日常の推し活を</span><span class="phrase">アシストする商品を</span><span class="phrase">企画・開発・販売します。</span><span class="phrase"><span class="keep">煌BASE</span>、<span class="keep">煌TIMES</span>、</span><span class="phrase"><span class="keep">株式会社サンライト</span>の詳細は</span><span class="phrase">各公式ページでご覧いただけます。</span></p>
         <div class="final-links">
-          <a class="final-link" href="https://www.makuake.com/project/kirameki_sunlight/" target="_blank" rel="noopener" aria-label="煌BASE Makuakeプロジェクト"><span>01</span><strong>煌BASE Makuake<span class="final-link-wide">プロジェクト</span></strong><span aria-hidden="true">↗</span></a>
+          <a class="final-link" href="https://kirapre.booth.pm/" target="_blank" rel="noopener" aria-label="煌BASE 購入サイト"><span>01</span><strong>煌BASE 購入サイト</strong><span aria-hidden="true">↗</span></a>
           <a class="final-link" href="https://kirameki.sunlight-net.co.jp" target="_blank" rel="noopener"><span>02</span><strong>煌TIMES 公式サイト</strong><span aria-hidden="true">↗</span></a>
           <a class="final-link" href="https://sunlight-net.co.jp" target="_blank" rel="noopener"><span>03</span><strong>株式会社サンライト</strong><span aria-hidden="true">↗</span></a>
         </div>
